@@ -10,7 +10,7 @@
         <!-- Modelo al que se refiere la acción -->
         <field name = "res_model">biblioteca.ejemplar</field>
 
-        <!-- Tipo de vistas que se mostrarán: list (tabla), form (formulario), kanban (kanban), calendar (calendario) -->
+        <!-- Tipo de vistas que se mostrarán: list (tabla), form (formulario) -->
         <field name = "view_mode">list,form</field>
 
     </record>

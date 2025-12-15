@@ -545,9 +545,317 @@ Así quedaría el modelo \textbf{Biblioteca Comic} \texttt{(models/biblioteca\_c
 
 \subsubsection{Vistas de Cómic}
 
+\justify
+El primer paso sera definir la acción principal que será abrir el modelo \texttt{biblioteca.comic} y muestra sus vistas. Se deben de definir los siguientes campos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{res\_model}: Modelo al que se refiere la acción.
+    \item \textbf{view\_mode}: Tipo de vistas que se mostrarán: list \texttt{(tabla)}, form \texttt{(formulario)}.
+
+\end{itemize}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/82.png}
+
+\end{figure}
+
+\justify
+Una vez definida la acción principal, se procederá a crear y explicar todas las vistas del modelo. La primera de ellas será la vista de tipo \textbf{list}, que mostrará los cómics en una tabla. Para ello se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{list} y también se definen los campos que se mostrarán en la vista:
+
+\begin{itemize}
+
+    \item \textbf{nombre}: Nombre del cómic \texttt{(String)}.
+    \item \textbf{fecha\_publicacion}: Fecha de publicación del cómic \texttt{(Date)}.
+    \item \textbf{estado}: Estado del cómic \texttt{(Selection)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría la vista de tipo \textbf{list} \texttt{(views/biblioteca\_comic.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/83.png}
+
+\end{figure}
+
+\justify
+La siguiente vista a explicar de este modelo será la vista de tipo \textbf{form}, utilizada para crear y editar cómics. Se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{form}. Se utliza una etiqueta \textbf{sheet} como contenedor principal del formulario. Además, se incluye una cabecera (\textbf{header}) con un botón para archivar cómics. 
+
+\justify
+También se definen los campos que se mostrarán en la vista para poder ser rellenados:
+
+\begin{itemize}
+
+    \item \textbf{nombre}: Nombre del cómic \texttt{(String)}.
+    \item \textbf{autor\_ids}: Autores del cómic \texttt{(Many2many)}.
+    \item \textbf{estado}: Estado del cómic \texttt{(Selection)}.
+    \item \textbf{paginas}: Número de páginas del cómic \texttt{(Integer)}.
+    \item \textbf{activo}: Campo de solo lectura que indica si el cómic está activo \texttt{(Boolean)}.
+    \item \textbf{precio}: Precio del cómic \texttt{(Float)}.
+    \item \textbf{fecha\_publicacion}: Fecha de publicación del cómic \texttt{(Date)}.
+    \item \textbf{portada}: Imagen de la portada del cómic \texttt{(Binary)}.
+    \item \textbf{valoracion\_lector}: Valoración media de los lectores \texttt{(Float)}.
+    \item \textbf{descripcion}: Descripción del cómic \texttt{(Html)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría la vista de tipo \textbf{form} \texttt{(views/biblioteca\_comic.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/84.png}
+
+\end{figure}
+
+\justify
+La última vista a explicar de este modelo será la vista de tipo \textbf{search}, utilizada para buscar cómics. Se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{search}. Se definen los campos de búsqueda y un filtro predefinido para mostrar los cómics sin autor:
+
+\begin{itemize}
+
+    \item \textbf{nombre}: Campo de búsqueda por nombre del cómic \texttt{(String)}.
+    \item \textbf{autor\_ids}: Campo de búsqueda por autores \texttt{(Many2many)}.
+    \item \textbf{Filtro "Sin autor"}: Filtro que muestra solo los cómics que no tienen autor asignado.
+
+\end{itemize}
+
+\justify
+Así quedaría la vista de tipo \textbf{search} \texttt{(views/biblioteca\_comic.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/85.png}
+
+\end{figure}
+
+\newpage
+
 \subsubsection{Vistas de Socio}
 
+\justify
+El primer paso sera definir la acción principal que será abrir el modelo \texttt{biblioteca.socio} y muestra sus vistas. Se deben de definir los siguientes campos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{res\_model}: Modelo al que se refiere la acción.
+    \item \textbf{view\_mode}: Tipo de vistas que se mostrarán: list \texttt{(tabla)}, form \texttt{(formulario)}.
+
+\end{itemize}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/86.png}
+
+\end{figure}
+
+\justify
+Una vez definida la acción principal, se procederá a crear y explicar todas las vistas del modelo. La primera de ellas será la vista de tipo \textbf{list}, que mostrará los socios en una tabla. Para ello se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{list} y también se definen los campos que se mostrarán en la vista:
+
+\begin{itemize}
+
+    \item \textbf{nombre}: Nombre del socio \texttt{(String)}.
+    \item \textbf{apellido}: Apellido del socio \texttt{(String)}.
+    \item \textbf{identificador}: Identificador del socio \texttt{(String)}.
+
+\end{itemize}
+
+\justify
+Así quedaría la vista de tipo \textbf{list} \texttt{(views/biblioteca\_socio.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/87.png}
+
+\end{figure}
+
+\justify
+La última vista a explicar de este modelo será la vista de tipo \textbf{form}, utilizada para crear y editar socios. Se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{form}. Se utliza una etiqueta \textbf{group} como contenedor de los campos y también se definen los campos que se mostrarán en la vista para poder ser rellenados:
+
+\begin{itemize}
+
+    \item \textbf{nombre}: Nombre del socio \texttt{(String)}.
+    \item \textbf{apellido}: Apellido del socio \texttt{(String)}.
+    \item \textbf{identificador}: Identificador del socio \texttt{(String)}.
+
+\end{itemize}
+
+\justify
+Así quedaría la vista de tipo \textbf{form} \texttt{(views/biblioteca\_socio.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/88.png}
+
+\end{figure}
+
+\newpage
+
 \subsubsection{Vistas de Préstamo}
+
+\justify
+El primer paso sera definir la acción principal que será abrir el modelo \texttt{biblioteca.ejemplar} y muestra sus vistas. Se deben de definir los siguientes campos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{res\_model}: Modelo al que se refiere la acción.
+    \item \textbf{view\_mode}: Tipo de vistas que se mostrarán: list \texttt{(tabla)}, form \texttt{(formulario)}.
+
+\end{itemize}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/89.png}
+
+\end{figure}
+
+\justify
+Una vez definida la acción principal, se procederá a crear y explicar todas las vistas del modelo. La primera de ellas será la vista de tipo \textbf{list}, que mostrará los préstamos en una tabla. Para ello se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{list} y también se definen los campos que se mostrarán en la vista:
+
+\begin{itemize}
+
+    \item \textbf{comic\_id}: Cómic prestado \texttt{(Many2one)}.
+    \item \textbf{socio\_id}: Socio que toma el préstamo \texttt{(Many2one)}.
+    \item \textbf{fecha\_inicio}: Fecha de inicio del préstamo \texttt{(Date)}.
+    \item \textbf{fecha\_fin}: Fecha de fin del préstamo \texttt{(Date)}.
+
+\end{itemize}
+
+\justify
+Así quedaría la vista de tipo \textbf{list} \texttt{(views/biblioteca\_ejemplar.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/90.png}
+
+\end{figure}
+
+\justify
+La última vista a explicar de este modelo será la vista de tipo \textbf{form}, utilizada para crear y editar préstamos. Se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{form}. Se utliza una etiqueta \textbf{group} como contenedor de los campos y también se definen los campos que se mostrarán en la vista para poder ser rellenados:
+
+\begin{itemize}
+
+    \item \textbf{comic\_id}: Cómic prestado \texttt{(Many2one)}.
+    \item \textbf{socio\_id}: Socio que toma el préstamo \texttt{(Many2one)}.
+    \item \textbf{fecha\_inicio}: Fecha de inicio del préstamo \texttt{(Date)}.
+    \item \textbf{fecha\_fin}: Fecha de fin del préstamo \texttt{(Date)}.
+
+\end{itemize}
+
+\justify
+Así quedaría la vista de tipo \textbf{form} \texttt{(views/biblioteca\_ejemplar.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/91.png}
+
+\end{figure}
 
 
 
