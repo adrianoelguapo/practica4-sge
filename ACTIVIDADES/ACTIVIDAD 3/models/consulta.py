@@ -13,7 +13,7 @@ class Consulta(models.Model):
     
     # Relación con paciente: Many2one (muchas consultas pueden ser de un paciente).
     paciente_id = fields.Many2one(comodel_name = 'hospital.paciente', string = 'Paciente', required = True, help = 'Paciente atendido en la consulta')
-    .
+    
     # Relación con médico: Many2one (muchas consultas pueden ser de un médico)
     medico_id = fields.Many2one(comodel_name = 'hospital.medico', string = 'Médico', required = True, help = 'Médico que atendió la consulta')
     

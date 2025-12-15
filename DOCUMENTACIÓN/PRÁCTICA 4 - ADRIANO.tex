@@ -854,10 +854,94 @@ Se debe modificar el archivo \texttt{\_\_manifest\_\_.py} para importar las vist
 
 \subsection{Funcionamiento}
 
+\justify
+Ya terminada la explicación de los modelos y las vistas del módulo, se pondrá a prueba su funcionamiento y para ello el primer paso es pasar el directorio del módulo del equipo local al contenedor de Odoo, concretamente a la carpeta mapeada para almacenar los módulos extra añadidos por el usuario y para ello se utilizará el siguiente comando: \newline
 
+\centering
+\texttt{docker cp <ruta\_módulo> <contenedor\_odoo>:/mnt/extra-addons/<directorio>}
 
+\begin{figure}[h]
 
+    \centering
+    \includegraphics[width=15cm]{images/53.png}
 
+\end{figure}
+
+\newpage
+
+\justify
+Una vez que se haya copiado el módulo al contenedor de Odoo, se debe activar el \textbf{Modo Desarrollador} y actualizar la lista de aplicaciones (explicado en la práctica anterior). Posteriormente se debe buscar el módulo en la lista de aplicaciones e instalarlo pulsando sobre el botón lila de \textbf{Activar}.
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/54.png}
+
+\end{figure}
+
+\justify
+Una vez instalado el módulo, se accederá a su interfaz mediante el menú de Odoo y se crearán nuevos pacientes. La vista de creación y edición de paciente (\textbf{form}) se ve de la siguiente manera:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/55.png}
+
+\end{figure}
+
+\justify
+Una vez creado el paciente, se podrá ver su información en la vista de tipo \textbf{list} que se ve de la siguiente manera:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/56.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+Ya creados un par de pacientes, se procederá a crear un nuevo médico para atenderlos. La vista de creación y edición de médico (\textbf{form}) se ve de la siguiente manera:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/57.png}
+
+\end{figure}
+
+\justify
+Una vez creado el médico, se podrá ver su información en la vista de tipo \textbf{list} que se ve de la siguiente manera:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/58.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+Ahora que se han creado los pacientes y los médicos, se procederá a crear la consulta para cada paciente. La vista de creación y edición de consulta (\textbf{form}) se ve de la siguiente manera:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/59.png}
+
+\end{figure}
+
+\justify
+Una vez creado la consulta, se podrá ver su información en la vista de tipo \textbf{list} que se ve de la siguiente manera:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/60.png}
+
+\end{figure}
 
 \newpage
 
@@ -1470,5 +1554,117 @@ Se debe modificar el archivo \texttt{\_\_manifest\_\_.py} para importar las vist
 \end{figure}
 
 \subsection{Funcionamiento}
+
+\justify
+Ya terminada la explicación de los modelos y las vistas del módulo, se pondrá a prueba su funcionamiento y para ello el primer paso es pasar el directorio del módulo del equipo local al contenedor de Odoo, concretamente a la carpeta mapeada para almacenar los módulos extra añadidos por el usuario y para ello se utilizará el siguiente comando: \newline
+
+\centering
+\texttt{docker cp <ruta\_módulo> <contenedor\_odoo>:/mnt/extra-addons/<directorio>}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/61.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+Una vez que se haya copiado el módulo al contenedor de Odoo, se debe activar el \textbf{Modo Desarrollador} y actualizar la lista de aplicaciones (explicado en la práctica anterior). Posteriormente se debe buscar el módulo en la lista de aplicaciones e instalarlo pulsando sobre el botón lila de \textbf{Activar}.
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/62.png}
+
+\end{figure}
+
+\justify
+Una vez instalado el módulo, se accederá a él desde la barra de navegación de Odoo y se empezará por crear un nuevo ciclo formativo. La vista de creación y edición de ciclos formativos \textbf{(form)}, se ve de la siguiente manera (aunque se puedan crear los módulos del ciclo desde esta vista, de momento se creará el ciclo sin ningún módulo):
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/63.png}
+
+\end{figure}
+
+\justify
+Una vez creado el ciclo formativo, se puede crearán nuevos profesores para impartir módulos en este ciclo. La vista de creación y edición de profesores \textbf{(form)}, se ve de la siguiente manera (aunque se puedan crear los módulos que imparten los profesores desde esta vista, de momento se creará el profesor sin ningún módulo asignado):
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/64.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+Ya creados los docentes que impartirán los ciclos, se crearán los alumnos que asistirán a los módulos impartidos por los profesores. La vista de creación y edición de alumnos \textbf{(form)}, se ve de la siguiente manera (aunque se puedan crear los módulos a los que asisten los alumnos desde esta vista, de momento se creará el alumno sin ningún módulo asignado):
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/65.png}
+
+\end{figure}
+
+\justify
+Ahora se crearán los módulos que se impartirán en el ciclo formativo. La vista de creación y edición de módulos \textbf{(form)}, se ve de la siguiente manera:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/66.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+Una vez creados todos los datos, así se verá la lista de módulos en el ciclo formativo:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/67.png}
+
+\end{figure}
+
+\justify
+Así se ve la vista de lista de los profesores:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=10cm]{images/68.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+Así se verá la lista de los alumnos:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=10cm]{images/69.png}
+
+\end{figure}
+
+\justify
+Y por último, así se verá la lista de ciclos formativos:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=10cm]{images/70.png}
+
+\end{figure}
+
 
 \end{document}

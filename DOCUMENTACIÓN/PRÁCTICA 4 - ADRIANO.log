@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.9)  15 DEC 2025 15:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.26)  15 DEC 2025 18:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/elguapo/Desktop/practica4-sge/DOCUMENTACI√ìN/PR√ÅCTICA 4 - ADRIANO.tex"
-(c:/Users/elguapo/Desktop/practica4-sge/DOCUMENTACI√ìN/PR√ÅCTICA 4 - ADRIANO.tex
+**"c:/Users/akadoblee/Desktop/PR√ÅCTICA 4/DOCUMENTACI√ìN/PR√ÅCTICA 4 - ADRIANO.tex"
+(c:/Users/akadoblee/Desktop/PR√ÅCTICA 4/DOCUMENTACI√ìN/PR√ÅCTICA 4 - ADRIANO.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
-(C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+(C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+(C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -23,7 +23,7 @@ File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2025/08/03 v25.12 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count283
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2045.
@@ -35,18 +35,18 @@ LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) o
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2078.
 \U@D=\dimen149
 \l@unhyphenated=\language79
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count284
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.ldf
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 12.
 )
@@ -59,14 +59,14 @@ Package babel Info: Making > an active character on input line 722.
 ))
 LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding OT1) on input line 3.
 LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1) on input line 3.
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
-) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count286
@@ -81,9 +81,9 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen156
 \Gm@layoutvoffset=\dimen157
 \Gm@dimlist=\toks19
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \col@sep=\dimen158
 \ar@mcellbox=\box53
@@ -100,7 +100,7 @@ Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \TX@delta=\dimen164
 \TX@cols=\count289
 \TX@ftn=\toks21
-) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
 Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
 \FV@CodeLineNo=\count290
 \FV@InFile=\read3
@@ -108,24 +108,24 @@ Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
 \c@FancyVerbLine=\count291
 \FV@StepNumber=\count292
 \FV@OutFile=\write3
-) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen165
 \Gin@req@width=\dimen166
-) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \CenteringLeftskip=\skip53
 \RaggedLeftLeftskip=\skip54
@@ -141,40 +141,40 @@ Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \RaggedLeftParindent=\skip64
 \RaggedRightParindent=\skip65
 \JustifyingParindent=\skip66
-) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
-) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/librefranklin\librefranklin.sty
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/librefranklin\librefranklin.sty
 Package: librefranklin 2022/09/19 (Bob Tennent) Supports LibreFranklin fonts for all LaTeX engines.
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks22
 \XKV@tempa@toks=\toks23
 )
 \XKV@depth=\count293
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+)) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
-) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
-) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/fontaxes\fontaxes.sty
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/fontaxes\fontaxes.sty
 Package: fontaxes 2025-05-24 v2.0.1 Font selection axes (deprecated)
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/figureversions\figureversions.sty
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/figureversions\figureversions.sty
 Package: figureversions 2025-04-29 v1.0.1 Figure versions
 )))
 LaTeX Font Info:    Trying to load font information for T1+LibreFranklin-TLF on input line 17.
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/librefranklin\t1librefranklin-tlf.fd
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/librefranklin\t1librefranklin-tlf.fd
 File: T1LibreFranklin-TLF.fd 2019/10/23 (autoinst) Font definitions for T1/LibreFranklin-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/m/n' in size <12> not available
 (Font)              Font shape `T1/LibreFranklin-TLF/regular/n' tried instead on input line 17.
 LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/regular/n' will be
 (Font)              scaled to size 12.0pt on input line 17.
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count294
 ) (PR√ÅCTICA 4 - ADRIANO.aux
@@ -236,7 +236,7 @@ LaTeX Info: Redefining \% on input line 17.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count295
 \scratchdimen=\dimen167
@@ -249,10 +249,10 @@ LaTeX Info: Redefining \% on input line 17.
 \MPnumerator=\count299
 \makeMPintoPDFobject=\count300
 \everyMPtoPDFconversion=\toks25
-) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@mv@tabular=\count301
@@ -274,7 +274,7 @@ LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/b/n' in size <17.28> not av
 LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/bold/n' will be
 (Font)              scaled to size 17.28pt on input line 31.
 LaTeX Font Info:    Trying to load font information for TS1+LibreFranklin-TLF on input line 38.
- (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/librefranklin\ts1librefranklin-tlf.fd
+ (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/librefranklin\ts1librefranklin-tlf.fd
 File: TS1LibreFranklin-TLF.fd 2019/10/23 (autoinst) Font definitions for TS1/LibreFranklin-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LibreFranklin-TLF/m/n' in size <12> not available
@@ -285,7 +285,7 @@ LaTeX Font Info:    Font shape `TS1/LibreFranklin-TLF/regular/n' will be
 
 [1
 
-{C:/Users/elguapo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/librefranklin/lbfr_tf5jo5.enc}{C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/librefranklin/lbfr_nb4g6w.enc}] (PR√ÅCTICA 4 - ADRIANO.toc
+{C:/Users/akadoblee/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/librefranklin/lbfr_tf5jo5.enc}{C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/librefranklin/lbfr_nb4g6w.enc}] (PR√ÅCTICA 4 - ADRIANO.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Font shape `T1/LibreFranklin-TLF/b/n' in size <12> not available
@@ -664,236 +664,357 @@ File: images/34.png Graphic file (type png)
 Package pdftex.def Info: images/34.png  used on input line 851.
 (pdftex.def)             Requested size: 426.79134pt x 282.99051pt.
 
-
-[29 <./images/34.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 875--876
+Underfull \hbox (badness 10000) in paragraph at lines 858--859
 
  []
 
-<images/19.png, id=165, 764.8575pt x 15.80907pt>
+<images/53.png, id=161, 983.92593pt x 39.14626pt>
+File: images/53.png Graphic file (type png)
+<use images/53.png>
+Package pdftex.def Info: images/53.png  used on input line 866.
+(pdftex.def)             Requested size: 426.79134pt x 16.98009pt.
+
+
+[29 <./images/34.png> <./images/53.png>]
+<images/54.png, id=167, 673.01437pt x 193.47281pt>
+File: images/54.png Graphic file (type png)
+<use images/54.png>
+Package pdftex.def Info: images/54.png  used on input line 878.
+(pdftex.def)             Requested size: 426.79134pt x 122.6915pt.
+<images/55.png, id=168, 595.47469pt x 213.04594pt>
+File: images/55.png Graphic file (type png)
+<use images/55.png>
+Package pdftex.def Info: images/55.png  used on input line 888.
+(pdftex.def)             Requested size: 426.79134pt x 152.69402pt.
+<images/56.png, id=169, 1011.78pt x 236.38312pt>
+File: images/56.png Graphic file (type png)
+<use images/56.png>
+Package pdftex.def Info: images/56.png  used on input line 898.
+(pdftex.def)             Requested size: 426.79134pt x 99.71306pt.
+
+
+[30 <./images/54.png> <./images/55.png> <./images/56.png>]
+<images/57.png, id=177, 583.42969pt x 202.50656pt>
+File: images/57.png Graphic file (type png)
+<use images/57.png>
+Package pdftex.def Info: images/57.png  used on input line 910.
+(pdftex.def)             Requested size: 426.79134pt x 148.14063pt.
+<images/58.png, id=178, 984.67876pt x 237.13594pt>
+File: images/58.png Graphic file (type png)
+<use images/58.png>
+Package pdftex.def Info: images/58.png  used on input line 920.
+(pdftex.def)             Requested size: 426.79134pt x 102.78421pt.
+
+
+[31 <./images/57.png> <./images/58.png>]
+<images/59.png, id=184, 582.67688pt x 292.09125pt>
+File: images/59.png Graphic file (type png)
+<use images/59.png>
+Package pdftex.def Info: images/59.png  used on input line 932.
+(pdftex.def)             Requested size: 426.79134pt x 213.95131pt.
+<images/60.png, id=185, 752.0597pt x 241.65282pt>
+File: images/60.png Graphic file (type png)
+<use images/60.png>
+Package pdftex.def Info: images/60.png  used on input line 942.
+(pdftex.def)             Requested size: 426.79134pt x 137.13881pt.
+
+
+[32 <./images/59.png> <./images/60.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 959--960
+
+ []
+
+<images/19.png, id=191, 764.8575pt x 15.80907pt>
 File: images/19.png Graphic file (type png)
 <use images/19.png>
-Package pdftex.def Info: images/19.png  used on input line 883.
+Package pdftex.def Info: images/19.png  used on input line 967.
 (pdftex.def)             Requested size: 426.79134pt x 8.8214pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 888--889
+Underfull \hbox (badness 10000) in paragraph at lines 972--973
 
  []
 
-<images/20.png, id=166, 1040.38687pt x 24.84282pt>
+<images/20.png, id=192, 1040.38687pt x 24.84282pt>
 File: images/20.png Graphic file (type png)
 <use images/20.png>
-Package pdftex.def Info: images/20.png  used on input line 896.
+Package pdftex.def Info: images/20.png  used on input line 980.
 (pdftex.def)             Requested size: 426.79134pt x 10.19092pt.
 
 
-[30 <./images/19.png> <./images/20.png>]
-Overfull \hbox (12.50435pt too wide) in paragraph at lines 916--917
+[33 <./images/19.png> <./images/20.png>]
+Overfull \hbox (12.50435pt too wide) in paragraph at lines 1000--1001
 []\T1/LibreFranklin-TLF/bold/n/12 modulo_ids\T1/LibreFranklin-TLF/regular/n/12 : Atri-bu-to que de-fi-ne los mÛ-du-los que cur-sa el alumno \T1/cmtt/m/n/12 (Many2many)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/35.png, id=173, 383.93437pt x 234.1247pt>
+<images/35.png, id=198, 383.93437pt x 234.1247pt>
 File: images/35.png Graphic file (type png)
 <use images/35.png>
-Package pdftex.def Info: images/35.png  used on input line 926.
+Package pdftex.def Info: images/35.png  used on input line 1010.
 (pdftex.def)             Requested size: 341.43306pt x 208.22028pt.
 
 
-[31 <./images/35.png>]
-Overfull \hbox (25.60281pt too wide) in paragraph at lines 943--944
+[34 <./images/35.png>]
+Overfull \hbox (25.60281pt too wide) in paragraph at lines 1027--1028
 []\T1/LibreFranklin-TLF/bold/n/12 modulo_ids\T1/LibreFranklin-TLF/regular/n/12 : Atri-bu-to que de-fi-ne los mÛ-du-los que im-par-te el pro-fe-sor \T1/cmtt/m/n/12 (One2many)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/36.png, id=178, 394.47375pt x 234.8775pt>
+<images/36.png, id=203, 394.47375pt x 234.8775pt>
 File: images/36.png Graphic file (type png)
 <use images/36.png>
-Package pdftex.def Info: images/36.png  used on input line 953.
+Package pdftex.def Info: images/36.png  used on input line 1037.
 (pdftex.def)             Requested size: 341.43306pt x 203.29526pt.
 
 
-[32 <./images/36.png>]
-<images/37.png, id=183, 377.91188pt x 228.855pt>
+[35 <./images/36.png>]
+<images/37.png, id=208, 377.91188pt x 228.855pt>
 File: images/37.png Graphic file (type png)
 <use images/37.png>
-Package pdftex.def Info: images/37.png  used on input line 980.
+Package pdftex.def Info: images/37.png  used on input line 1064.
 (pdftex.def)             Requested size: 341.43306pt x 206.76376pt.
 
 
-[33 <./images/37.png>]
-Overfull \hbox (9.37881pt too wide) in paragraph at lines 997--998
+[36 <./images/37.png>]
+Overfull \hbox (9.37881pt too wide) in paragraph at lines 1081--1082
 []\T1/LibreFranklin-TLF/bold/n/12 ciclo_ids\T1/LibreFranklin-TLF/regular/n/12 : Atri-bu-to que de-fi-ne los mÛ-du-los que im-par-te el pro-fe-sor \T1/cmtt/m/n/12 (Many2One)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
 
-Overfull \hbox (19.5668pt too wide) in paragraph at lines 998--999
+Overfull \hbox (19.5668pt too wide) in paragraph at lines 1082--1083
 []\T1/LibreFranklin-TLF/bold/n/12 profesor_ids\T1/LibreFranklin-TLF/regular/n/12 : Atri-bu-to que de-fi-ne el pro-fe-sor que im-par-te el mÛ-du-lo \T1/cmtt/m/n/12 (Many2One)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
 
-Overfull \hbox (18.92435pt too wide) in paragraph at lines 999--1000
+Overfull \hbox (18.92435pt too wide) in paragraph at lines 1083--1084
 []\T1/LibreFranklin-TLF/bold/n/12 alumno_ids\T1/LibreFranklin-TLF/regular/n/12 : Atri-bu-to que de-fi-ne los alum-nos que cur-san el mÛ-du-lo \T1/cmtt/m/n/12 (Many2many)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/38.png, id=188, 375.65344pt x 301.8778pt>
+<images/38.png, id=214, 375.65344pt x 301.8778pt>
 File: images/38.png Graphic file (type png)
 <use images/38.png>
-Package pdftex.def Info: images/38.png  used on input line 1009.
+Package pdftex.def Info: images/38.png  used on input line 1093.
 (pdftex.def)             Requested size: 341.43306pt x 274.396pt.
 
-Overfull \hbox (10.57156pt too wide) in paragraph at lines 1018--1019
+Overfull \hbox (10.57156pt too wide) in paragraph at lines 1102--1103
 []\T1/LibreFranklin-TLF/regular/n/12 El pri-mer pa-so se-ra de-fi-nir la ac-ciÛn prin-ci-pal que se-r· abrir el mo-de-lo \T1/cmtt/m/n/12 ciclos.alumno
  []
 
 
 
-[34 <./images/38.png>]
-Overfull \hbox (3.50035pt too wide) in paragraph at lines 1024--1025
+[37 <./images/38.png>]
+Overfull \hbox (3.50035pt too wide) in paragraph at lines 1108--1109
 []\T1/LibreFranklin-TLF/bold/n/12 view_mode\T1/LibreFranklin-TLF/regular/n/12 : Ti-po de vis-tas que se mos-tra-r·n: list \T1/cmtt/m/n/12 (tabla)\T1/LibreFranklin-TLF/regular/n/12 , form \T1/cmtt/m/n/12 (formulario)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/39.png, id=193, 476.53032pt x 158.84344pt>
+<images/39.png, id=219, 476.53032pt x 158.84344pt>
 File: images/39.png Graphic file (type png)
 <use images/39.png>
-Package pdftex.def Info: images/39.png  used on input line 1031.
+Package pdftex.def Info: images/39.png  used on input line 1115.
 (pdftex.def)             Requested size: 369.88582pt x 123.30113pt.
 
 
-[35 <./images/39.png>]
-<images/43.png, id=198, 580.41844pt x 289.08pt>
+[38 <./images/39.png>]
+<images/43.png, id=224, 580.41844pt x 289.08pt>
 File: images/43.png Graphic file (type png)
 <use images/43.png>
-Package pdftex.def Info: images/43.png  used on input line 1064.
+Package pdftex.def Info: images/43.png  used on input line 1148.
 (pdftex.def)             Requested size: 369.88582pt x 184.2254pt.
 
 
-[36 <./images/43.png>]
-<images/48.png, id=204, 518.6878pt x 489.32813pt>
+[39 <./images/43.png>]
+<images/48.png, id=229, 518.6878pt x 489.32813pt>
 File: images/48.png Graphic file (type png)
 <use images/48.png>
-Package pdftex.def Info: images/48.png  used on input line 1110.
+Package pdftex.def Info: images/48.png  used on input line 1194.
 (pdftex.def)             Requested size: 369.88582pt x 348.9635pt.
 
 
-[37 <./images/48.png>]
-Overfull \hbox (22.91855pt too wide) in paragraph at lines 1119--1120
+[40 <./images/48.png>]
+Overfull \hbox (22.91855pt too wide) in paragraph at lines 1203--1204
 []\T1/LibreFranklin-TLF/regular/n/12 El pri-mer pa-so se-ra de-fi-nir la ac-ciÛn prin-ci-pal que se-r· abrir el mo-de-lo \T1/cmtt/m/n/12 ciclos.profesor
  []
 
 
-Overfull \hbox (3.50035pt too wide) in paragraph at lines 1125--1126
+Overfull \hbox (3.50035pt too wide) in paragraph at lines 1209--1210
 []\T1/LibreFranklin-TLF/bold/n/12 view_mode\T1/LibreFranklin-TLF/regular/n/12 : Ti-po de vis-tas que se mos-tra-r·n: list \T1/cmtt/m/n/12 (tabla)\T1/LibreFranklin-TLF/regular/n/12 , form \T1/cmtt/m/n/12 (formulario)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/40.png, id=209, 484.05844pt x 158.84344pt>
+<images/40.png, id=234, 484.05844pt x 158.84344pt>
 File: images/40.png Graphic file (type png)
 <use images/40.png>
-Package pdftex.def Info: images/40.png  used on input line 1132.
+Package pdftex.def Info: images/40.png  used on input line 1216.
 (pdftex.def)             Requested size: 369.88582pt x 121.38394pt.
 
 
-[38 <./images/40.png>]
-<images/44.png, id=214, 499.8675pt x 289.08pt>
+[41 <./images/40.png>]
+<images/44.png, id=239, 499.8675pt x 289.08pt>
 File: images/44.png Graphic file (type png)
 <use images/44.png>
-Package pdftex.def Info: images/44.png  used on input line 1165.
+Package pdftex.def Info: images/44.png  used on input line 1249.
 (pdftex.def)             Requested size: 369.88582pt x 213.91583pt.
 
 
-[39 <./images/44.png>]
-<images/49.png, id=219, 454.69875pt x 491.58656pt>
+[42 <./images/44.png>]
+<images/49.png, id=245, 454.69875pt x 491.58656pt>
 File: images/49.png Graphic file (type png)
 <use images/49.png>
-Package pdftex.def Info: images/49.png  used on input line 1210.
+Package pdftex.def Info: images/49.png  used on input line 1294.
 (pdftex.def)             Requested size: 369.88582pt x 399.90067pt.
 
 
-[40 <./images/49.png>]
-Overfull \hbox (4.39807pt too wide) in paragraph at lines 1219--1220
+[43 <./images/49.png>]
+Overfull \hbox (4.39807pt too wide) in paragraph at lines 1303--1304
 []\T1/LibreFranklin-TLF/regular/n/12 El pri-mer pa-so se-ra de-fi-nir la ac-ciÛn prin-ci-pal que se-r· abrir el mo-de-lo \T1/cmtt/m/n/12 ciclos.ciclo
  []
 
 
-Overfull \hbox (3.50035pt too wide) in paragraph at lines 1225--1226
+Overfull \hbox (3.50035pt too wide) in paragraph at lines 1309--1310
 []\T1/LibreFranklin-TLF/bold/n/12 view_mode\T1/LibreFranklin-TLF/regular/n/12 : Ti-po de vis-tas que se mos-tra-r·n: list \T1/cmtt/m/n/12 (tabla)\T1/LibreFranklin-TLF/regular/n/12 , form \T1/cmtt/m/n/12 (formulario)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/41.png, id=224, 468.24937pt x 158.84344pt>
+<images/41.png, id=250, 468.24937pt x 158.84344pt>
 File: images/41.png Graphic file (type png)
 <use images/41.png>
-Package pdftex.def Info: images/41.png  used on input line 1232.
+Package pdftex.def Info: images/41.png  used on input line 1316.
 (pdftex.def)             Requested size: 369.88582pt x 125.48251pt.
 
 
-[41 <./images/41.png>]
-<images/45.png, id=229, 488.57532pt x 288.3272pt>
+[44 <./images/41.png>]
+<images/45.png, id=255, 488.57532pt x 288.3272pt>
 File: images/45.png Graphic file (type png)
 <use images/45.png>
-Package pdftex.def Info: images/45.png  used on input line 1265.
+Package pdftex.def Info: images/45.png  used on input line 1349.
 (pdftex.def)             Requested size: 369.88582pt x 218.28622pt.
 
 
-[42 <./images/45.png>]
-<images/50.png, id=235, 523.20468pt x 481.8pt>
+[45 <./images/45.png>]
+<images/50.png, id=260, 523.20468pt x 481.8pt>
 File: images/50.png Graphic file (type png)
 <use images/50.png>
-Package pdftex.def Info: images/50.png  used on input line 1311.
+Package pdftex.def Info: images/50.png  used on input line 1395.
 (pdftex.def)             Requested size: 369.88582pt x 340.6174pt.
 
 
-[43 <./images/50.png>]
-Overfull \hbox (10.57156pt too wide) in paragraph at lines 1320--1321
+[46 <./images/50.png>]
+Overfull \hbox (10.57156pt too wide) in paragraph at lines 1404--1405
 []\T1/LibreFranklin-TLF/regular/n/12 El pri-mer pa-so se-ra de-fi-nir la ac-ciÛn prin-ci-pal que se-r· abrir el mo-de-lo \T1/cmtt/m/n/12 ciclos.modulo
  []
 
 
-Overfull \hbox (3.50035pt too wide) in paragraph at lines 1326--1327
+Overfull \hbox (3.50035pt too wide) in paragraph at lines 1410--1411
 []\T1/LibreFranklin-TLF/bold/n/12 view_mode\T1/LibreFranklin-TLF/regular/n/12 : Ti-po de vis-tas que se mos-tra-r·n: list \T1/cmtt/m/n/12 (tabla)\T1/LibreFranklin-TLF/regular/n/12 , form \T1/cmtt/m/n/12 (formulario)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/42.png, id=240, 475.7775pt x 158.09062pt>
+<images/42.png, id=265, 475.7775pt x 158.09062pt>
 File: images/42.png Graphic file (type png)
 <use images/42.png>
-Package pdftex.def Info: images/42.png  used on input line 1333.
+Package pdftex.def Info: images/42.png  used on input line 1417.
 (pdftex.def)             Requested size: 369.88582pt x 122.90974pt.
 
 
-[44 <./images/42.png>]
-<images/46.png, id=245, 609.02531pt x 326.72063pt>
+[47 <./images/42.png>]
+<images/46.png, id=270, 609.02531pt x 326.72063pt>
 File: images/46.png Graphic file (type png)
 <use images/46.png>
-Package pdftex.def Info: images/46.png  used on input line 1369.
+Package pdftex.def Info: images/46.png  used on input line 1453.
 (pdftex.def)             Requested size: 369.88582pt x 198.43681pt.
 
 
-[45 <./images/46.png>]
+[48 <./images/46.png>]
 File: images/50.png Graphic file (type png)
 <use images/50.png>
-Package pdftex.def Info: images/50.png  used on input line 1415.
+Package pdftex.def Info: images/50.png  used on input line 1499.
 (pdftex.def)             Requested size: 369.88582pt x 340.6174pt.
 
 
-[46]
-<images/47.png, id=253, 675.27281pt x 197.23688pt>
+[49]
+<images/47.png, id=279, 675.27281pt x 197.23688pt>
 File: images/47.png Graphic file (type png)
 <use images/47.png>
-Package pdftex.def Info: images/47.png  used on input line 1444.
+Package pdftex.def Info: images/47.png  used on input line 1528.
 (pdftex.def)             Requested size: 426.79134pt x 124.66014pt.
 
 
-[47 <./images/47.png>]
-<images/51.png, id=258, 225.09094pt x 91.09032pt>
+[50 <./images/47.png>]
+<images/51.png, id=284, 225.09094pt x 91.09032pt>
 File: images/51.png Graphic file (type png)
 <use images/51.png>
-Package pdftex.def Info: images/51.png  used on input line 1458.
+Package pdftex.def Info: images/51.png  used on input line 1542.
 (pdftex.def)             Requested size: 199.16928pt x 80.60448pt.
-<images/52.png, id=259, 401.24907pt x 254.45062pt>
+<images/52.png, id=285, 401.24907pt x 254.45062pt>
 File: images/52.png Graphic file (type png)
 <use images/52.png>
-Package pdftex.def Info: images/52.png  used on input line 1468.
+Package pdftex.def Info: images/52.png  used on input line 1552.
 (pdftex.def)             Requested size: 284.52756pt x 180.44377pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 1559--1560
 
-[48 <./images/51.png> <./images/52.png>] (PR√ÅCTICA 4 - ADRIANO.aux
+ []
+
+<images/61.png, id=286, 1029.09468pt x 27.10126pt>
+File: images/61.png Graphic file (type png)
+<use images/61.png>
+Package pdftex.def Info: images/61.png  used on input line 1567.
+(pdftex.def)             Requested size: 426.79134pt x 11.23978pt.
+
+
+[51 <./images/51.png> <./images/52.png> <./images/61.png>]
+<images/62.png, id=293, 666.99188pt x 194.97844pt>
+File: images/62.png Graphic file (type png)
+<use images/62.png>
+Package pdftex.def Info: images/62.png  used on input line 1579.
+(pdftex.def)             Requested size: 426.79134pt x 124.76494pt.
+<images/63.png, id=294, 976.39781pt x 234.1247pt>
+File: images/63.png Graphic file (type png)
+<use images/63.png>
+Package pdftex.def Info: images/63.png  used on input line 1589.
+(pdftex.def)             Requested size: 426.79134pt x 102.33641pt.
+<images/64.png, id=295, 868.74562pt x 218.31563pt>
+File: images/64.png Graphic file (type png)
+<use images/64.png>
+Package pdftex.def Info: images/64.png  used on input line 1599.
+(pdftex.def)             Requested size: 426.79134pt x 107.2554pt.
+
+
+[52 <./images/62.png> <./images/63.png> <./images/64.png>]
+<images/65.png, id=302, 1053.1847pt x 231.11343pt>
+File: images/65.png Graphic file (type png)
+<use images/65.png>
+Package pdftex.def Info: images/65.png  used on input line 1611.
+(pdftex.def)             Requested size: 426.79134pt x 93.65685pt.
+<images/66.png, id=303, 735.49782pt x 316.93407pt>
+File: images/66.png Graphic file (type png)
+<use images/66.png>
+Package pdftex.def Info: images/66.png  used on input line 1621.
+(pdftex.def)             Requested size: 426.79134pt x 183.91376pt.
+
+
+[53 <./images/65.png> <./images/66.png>]
+<images/67.png, id=309, 791.95876pt x 335.00156pt>
+File: images/67.png Graphic file (type png)
+<use images/67.png>
+Package pdftex.def Info: images/67.png  used on input line 1633.
+(pdftex.def)             Requested size: 426.79134pt x 180.5352pt.
+<images/68.png, id=310, 377.15906pt x 273.27094pt>
+File: images/68.png Graphic file (type png)
+<use images/68.png>
+Package pdftex.def Info: images/68.png  used on input line 1643.
+(pdftex.def)             Requested size: 284.52756pt x 206.15358pt.
+
+
+[54 <./images/67.png> <./images/68.png>]
+<images/69.png, id=317, 392.21532pt x 238.64156pt>
+File: images/69.png Graphic file (type png)
+<use images/69.png>
+Package pdftex.def Info: images/69.png  used on input line 1655.
+(pdftex.def)             Requested size: 284.52756pt x 173.12903pt.
+<images/70.png, id=318, 487.8225pt x 145.29282pt>
+File: images/70.png Graphic file (type png)
+<use images/70.png>
+Package pdftex.def Info: images/70.png  used on input line 1665.
+(pdftex.def)             Requested size: 284.52756pt x 84.74431pt.
+
+
+[55 <./images/69.png> <./images/70.png>] (PR√ÅCTICA 4 - ADRIANO.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -903,17 +1024,17 @@ L3 programming layer <2025-09-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5328 strings out of 468130
- 96096 string characters out of 5429665
+ 5454 strings out of 468130
+ 98802 string characters out of 5428697
  497915 words of memory out of 5000000
- 33877 multiletter control sequences out of 15000+600000
+ 34003 multiletter control sequences out of 15000+600000
  685555 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,6n,73p,524b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\elguapo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/librefranklin/LibreFranklin-Bold.pfb><C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/librefranklin/LibreFranklin-Regular.pfb>
-Output written on "PR√ÅCTICA 4 - ADRIANO.pdf" (49 pages, 1569660 bytes).
+ <C:\Users\akadoblee\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/librefranklin/LibreFranklin-Bold.pfb><C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/librefranklin/LibreFranklin-Regular.pfb>
+Output written on "PR√ÅCTICA 4 - ADRIANO.pdf" (56 pages, 1782862 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
+ 392 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 261 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 351 words of extra memory for PDF output out of 10000 (max. 10000000)
 
