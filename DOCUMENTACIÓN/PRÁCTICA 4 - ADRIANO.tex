@@ -440,12 +440,219 @@ El objetivo de esta actividad es amplicar el módulo de ejemplo de la \textbf{Bi
 
 \subsection{Modelos}
 
-\subsection{Vistas}
+\subsubsection{Modelo Socio}
 
-\subsection{Funcionamiento}
+\justify
+El primer paso para crear el modelo es definir el nombre de la clase que definirá al modelo y que heredará de la clase \textbf{models.Model}. Una vez definida la clase, se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{\_name}: Define como Odoo guardará el modelo en la base de datos.
+    \item \textbf{\_description}: Descripción del modelo.
+    \item \textbf{\_rec\_name}: Campo a mostrar por defecto en las vistas y menús.
+    \item \textbf{nombre}: Nombre del socio \texttt{(String)}.
+    \item \textbf{apellido}: Apellido del socio \texttt{(String)}.
+    \item \textbf{identificador}: Identificador del socio \texttt{(String)}.
+    
+\end{itemize}
+
+\justify
+Así quedaría el modelo \textbf{Socio} \texttt{(models/biblioteca\_socio.py)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=12cm]{images/71.png}
+
+\end{figure}
+
+\subsubsection{Modelo Ejemplar}
+
+\justify
+El primer paso para crear el modelo es definir el nombre de la clase que definirá al modelo y que heredará de la clase \textbf{models.Model}. Una vez definida la clase, se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{\_name}: Define como Odoo guardará el modelo en la base de datos.
+    \item \textbf{\_description}: Descripción del modelo.
+    \item \textbf{\_rec\_name}: Campo a mostrar por defecto en las vistas y menús.
+    \item \textbf{comic\_id}: Relación con el modelo de Comic \texttt{(Many2one)}.
+    \item \textbf{socio\_id}: Relación con el modelo de Socio \texttt{(Many2one)}.
+    \item \textbf{fecha\_inicio}: Fecha de inicio del préstamo \texttt{(Date)}.
+    \item \textbf{fecha\_fin}: Fecha de fin del préstamo \texttt{(Date)}.
+    
+\end{itemize}
+
+\justify
+Además, se añade una restricción (\texttt{\_check\_fechas}) para comprobar que las fechas son coherentes: la fecha de inicio no puede ser posterior al día actual y la fecha de devolución no puede ser anterior al día actual.
+
+\justify
+Así quedaría el modelo \textbf{Ejemplar} \texttt{(models/biblioteca\_ejemplar.py)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=12cm]{images/72.png}
+
+\end{figure}
+
+\subsubsection{Modelo Cómic}
+
+\justify
+Se ha modificado el modelo de \textbf{biblioteca.comic} para añadir nuevos campos y funcionalidades. Se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{estado}: Estado del cómic (borrador, disponible, perdido) \texttt{(Selection)}.
+    \item \textbf{descripcion}: Descripción del cómic \texttt{(Html)}.
+    \item \textbf{portada}: Imagen de la portada \texttt{(Binary)}.
+    \item \textbf{fecha\_publicacion}: Fecha de publicación \texttt{(Date)}.
+    \item \textbf{precio}: Precio del cómic \texttt{(Float)}.
+    \item \textbf{paginas}: Número de páginas \texttt{(Integer)}.
+    \item \textbf{valoracion\_lector}: Valoración media de los lectores \texttt{(Float)}.
+    \item \textbf{autor\_ids}: Autores del cómic \texttt{(Many2many)}.
+    
+\end{itemize}
+
+\justify
+También se incluyen restricciones SQL para asegurar que el título sea único y que el número de páginas sea positivo, así como una restricción de python para validar la fecha de publicación.
 
 \newpage
 
+\justify
+Así quedaría el modelo \textbf{Biblioteca Comic} \texttt{(models/biblioteca\_comic.py)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=12cm]{images/73.png}
+
+\end{figure}
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Vistas}
+
+\subsubsection{Vistas de Cómic}
+
+\subsubsection{Vistas de Socio}
+
+\subsubsection{Vistas de Préstamo}
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+\subsection{Funcionamiento}
+
+\justify
+Ya terminada la explicación de los modelos y las vistas del módulo, se pondrá a prueba su funcionamiento y para ello el primer paso es pasar el directorio del módulo del equipo local al contenedor de Odoo, concretamente a la carpeta mapeada para almacenar los módulos extra añadidos por el usuario y para ello se utilizará el siguiente comando: \newline
+
+\centering
+\texttt{docker cp <ruta\_módulo> <contenedor\_odoo>:/mnt/extra-addons/<directorio>}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/74.png}
+
+\end{figure}
+
+\justify
+Una vez que se haya copiado el módulo al contenedor de Odoo, se debe activar el \textbf{Modo Desarrollador} y actualizar la lista de aplicaciones (explicado en la práctica anterior). Posteriormente se debe buscar el módulo en la lista de aplicaciones e instalarlo pulsando sobre el botón lila de \textbf{Activar}.
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/75.png}
+
+\end{figure}
+
+\justify
+Una vez instalado el módulo, se accederá a su interfaz mediante el menú de Odoo y se creará un nuevo cómic. La vista de creación y edición de cómic (\textbf{form}) se ve de la siguiente manera:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/76.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+Al crear el cómic, se muestra de la siguiente manera en la vista de tipo \textbf{list}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=10cm]{images/77.png}
+
+\end{figure}
+
+\justify
+Una vez creado un cómic, es hora de crear un nuevo socio de la biblioteca. La vista de creación y edición de socio \textbf{(form)} se ve de la siguiente manera:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=10cm]{images/78.png}
+
+\end{figure}
+
+\justify
+Al crear el nuevo socio, se muestra de la siguiente manera en la vista de tipo \textbf{list}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=10cm]{images/79.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+Ahora que ya hay definidos un ejemplar de un cómic y un socio, es hora de simular un préstamo de ese mismo cómic a ese mismo socio. La vista de creación y edición de préstamo \textbf{(form)} se ve de la siguiente manera:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=10cm]{images/80.png}
+
+\end{figure}
+
+\justify
+Al crear el nuevo préstamo, se muestra de la siguiente manera en la vista de tipo \textbf{list}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=10cm]{images/81.png}
+
+\end{figure}
+
+\newpage
+
+\justify
 \section{ACTIVIDAD 3}
 
 \subsection{Introducción}
@@ -851,6 +1058,32 @@ Se debe modificar el archivo \texttt{\_\_manifest\_\_.py} para importar las vist
     \includegraphics[width=15cm]{images/34.png}
 
 \end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \subsection{Funcionamiento}
 

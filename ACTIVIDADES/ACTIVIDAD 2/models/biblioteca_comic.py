@@ -23,7 +23,7 @@ class BaseArchive(models.AbstractModel):
             record.activo = not record.activo
 
 
-#Definimos modelo Biblioteca comic
+# Definimos modelo Biblioteca comic
 class BibliotecaComic(models.Model):
 
     # Define como Odoo guardará el módulo en la base de datos.

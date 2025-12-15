@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.26)  15 DEC 2025 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.26)  15 DEC 2025 20:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -462,559 +462,637 @@ Overfull \hbox (0.91223pt too wide) in paragraph at lines 439--440
 \T1/cmtt/m/n/12 Directorio EJ03-ComicsSimple del repositorio clonado previamente \T1/LibreFranklin-TLF/regular/n/12 pa-ra que
  []
 
+<images/71.png, id=89, 590.205pt x 302.63063pt>
+File: images/71.png Graphic file (type png)
+<use images/71.png>
+Package pdftex.def Info: images/71.png  used on input line 465.
+(pdftex.def)             Requested size: 341.43306pt x 175.07333pt.
 
 
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 459--460
+[16 <./images/71.png>]
+<images/72.png, id=94, 767.11594pt x 544.28343pt>
+File: images/72.png Graphic file (type png)
+<use images/72.png>
+Package pdftex.def Info: images/72.png  used on input line 495.
+(pdftex.def)             Requested size: 341.43306pt x 242.25934pt.
+
+
+[17 <./images/72.png>]
+
+[18]
+<images/73.png, id=103, 751.30687pt x 654.19406pt>
+File: images/73.png Graphic file (type png)
+<use images/73.png>
+Package pdftex.def Info: images/73.png  used on input line 528.
+(pdftex.def)             Requested size: 341.43306pt x 297.29941pt.
+
+
+[19 <./images/73.png>]
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 567--568
 
  []
 
-<images/17.png, id=92, 718.93594pt x 15.80907pt>
+<images/74.png, id=111, 968.86969pt x 39.89906pt>
+File: images/74.png Graphic file (type png)
+<use images/74.png>
+Package pdftex.def Info: images/74.png  used on input line 575.
+(pdftex.def)             Requested size: 426.79134pt x 17.57571pt.
+<images/75.png, id=112, 634.62094pt x 191.21437pt>
+File: images/75.png Graphic file (type png)
+<use images/75.png>
+Package pdftex.def Info: images/75.png  used on input line 585.
+(pdftex.def)             Requested size: 426.79134pt x 128.59729pt.
+<images/76.png, id=113, 1443.14156pt x 336.50719pt>
+File: images/76.png Graphic file (type png)
+<use images/76.png>
+Package pdftex.def Info: images/76.png  used on input line 595.
+(pdftex.def)             Requested size: 426.79134pt x 99.51521pt.
+
+
+[21 <./images/74.png> <./images/75.png> <./images/76.png>]
+<images/77.png, id=120, 372.64218pt x 157.33781pt>
+File: images/77.png Graphic file (type png)
+<use images/77.png>
+Package pdftex.def Info: images/77.png  used on input line 607.
+(pdftex.def)             Requested size: 284.52756pt x 120.13734pt.
+<images/78.png, id=121, 388.45125pt x 188.95593pt>
+File: images/78.png Graphic file (type png)
+<use images/78.png>
+Package pdftex.def Info: images/78.png  used on input line 617.
+(pdftex.def)             Requested size: 284.52756pt x 138.40663pt.
+<images/79.png, id=122, 354.57469pt x 143.03438pt>
+File: images/79.png Graphic file (type png)
+<use images/79.png>
+Package pdftex.def Info: images/79.png  used on input line 627.
+(pdftex.def)             Requested size: 284.52756pt x 114.7812pt.
+
+
+[22 <./images/77.png> <./images/78.png> <./images/79.png>]
+<images/80.png, id=129, 321.45094pt x 216.81pt>
+File: images/80.png Graphic file (type png)
+<use images/80.png>
+Package pdftex.def Info: images/80.png  used on input line 639.
+(pdftex.def)             Requested size: 284.52756pt x 191.91156pt.
+<images/81.png, id=130, 456.20438pt x 152.82094pt>
+File: images/81.png Graphic file (type png)
+<use images/81.png>
+Package pdftex.def Info: images/81.png  used on input line 649.
+(pdftex.def)             Requested size: 284.52756pt x 95.31462pt.
+
+
+[23 <./images/80.png> <./images/81.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
+
+ []
+
+<images/17.png, id=136, 718.93594pt x 15.80907pt>
 File: images/17.png Graphic file (type png)
 <use images/17.png>
-Package pdftex.def Info: images/17.png  used on input line 467.
+Package pdftex.def Info: images/17.png  used on input line 674.
 (pdftex.def)             Requested size: 426.79134pt x 9.38515pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 472--473
+Underfull \hbox (badness 10000) in paragraph at lines 679--680
 
  []
 
-<images/18.png, id=93, 993.7125pt x 30.86531pt>
+<images/18.png, id=137, 993.7125pt x 30.86531pt>
 File: images/18.png Graphic file (type png)
 <use images/18.png>
-Package pdftex.def Info: images/18.png  used on input line 480.
+Package pdftex.def Info: images/18.png  used on input line 687.
 (pdftex.def)             Requested size: 426.79134pt x 13.25627pt.
 
 
-[17 <./images/17.png> <./images/18.png>]
-<images/21.png, id=99, 785.93625pt x 255.95625pt>
+[24 <./images/17.png> <./images/18.png>]
+<images/21.png, id=144, 785.93625pt x 255.95625pt>
 File: images/21.png Graphic file (type png)
 <use images/21.png>
-Package pdftex.def Info: images/21.png  used on input line 510.
+Package pdftex.def Info: images/21.png  used on input line 717.
 (pdftex.def)             Requested size: 455.24408pt x 148.26334pt.
 
-Overfull \hbox (11.6656pt too wide) in paragraph at lines 510--511
+Overfull \hbox (11.6656pt too wide) in paragraph at lines 717--718
  [][] 
  []
 
 
 
-[18 <./images/21.png>]
-<images/22.png, id=105, 777.65532pt x 250.68657pt>
+[25 <./images/21.png>]
+<images/22.png, id=149, 777.65532pt x 250.68657pt>
 File: images/22.png Graphic file (type png)
 <use images/22.png>
-Package pdftex.def Info: images/22.png  used on input line 537.
+Package pdftex.def Info: images/22.png  used on input line 744.
 (pdftex.def)             Requested size: 455.24408pt x 146.75623pt.
 
-Overfull \hbox (11.6656pt too wide) in paragraph at lines 537--538
+Overfull \hbox (11.6656pt too wide) in paragraph at lines 744--745
  [][] 
  []
 
 
 
-[19 <./images/22.png>]
-<images/23.png, id=110, 775.39688pt x 287.57437pt>
+[26 <./images/22.png>]
+<images/23.png, id=154, 775.39688pt x 287.57437pt>
 File: images/23.png Graphic file (type png)
 <use images/23.png>
-Package pdftex.def Info: images/23.png  used on input line 565.
+Package pdftex.def Info: images/23.png  used on input line 772.
 (pdftex.def)             Requested size: 455.24408pt x 168.83807pt.
 
-Overfull \hbox (11.6656pt too wide) in paragraph at lines 565--566
+Overfull \hbox (11.6656pt too wide) in paragraph at lines 772--773
  [][] 
  []
 
 
-Overfull \hbox (35.26553pt too wide) in paragraph at lines 575--576
+Overfull \hbox (35.26553pt too wide) in paragraph at lines 782--783
 []\T1/LibreFranklin-TLF/regular/n/12 El pri-mer pa-so se-ra de-fi-nir la ac-ciÛn prin-ci-pal que se-r· abrir el mo-de-lo \T1/cmtt/m/n/12 hospital.paciente
  []
 
 
-Overfull \hbox (3.50035pt too wide) in paragraph at lines 581--582
+Overfull \hbox (3.50035pt too wide) in paragraph at lines 788--789
 []\T1/LibreFranklin-TLF/bold/n/12 view_mode\T1/LibreFranklin-TLF/regular/n/12 : Ti-po de vis-tas que se mos-tra-r·n: list \T1/cmtt/m/n/12 (tabla)\T1/LibreFranklin-TLF/regular/n/12 , form \T1/cmtt/m/n/12 (formulario)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/24.png, id=111, 495.35063pt x 161.85469pt>
+<images/24.png, id=155, 495.35063pt x 161.85469pt>
 File: images/24.png Graphic file (type png)
 <use images/24.png>
-Package pdftex.def Info: images/24.png  used on input line 588.
+Package pdftex.def Info: images/24.png  used on input line 795.
 (pdftex.def)             Requested size: 455.24408pt x 148.75005pt.
 
-Overfull \hbox (11.6656pt too wide) in paragraph at lines 588--589
+Overfull \hbox (11.6656pt too wide) in paragraph at lines 795--796
  [][] 
  []
 
 
 
-[20 <./images/23.png> <./images/24.png>]
-<images/25.png, id=117, 484.81125pt x 287.57437pt>
+[27 <./images/23.png> <./images/24.png>]
+<images/25.png, id=161, 484.81125pt x 287.57437pt>
 File: images/25.png Graphic file (type png)
 <use images/25.png>
-Package pdftex.def Info: images/25.png  used on input line 621.
+Package pdftex.def Info: images/25.png  used on input line 828.
 (pdftex.def)             Requested size: 455.24408pt x 270.04788pt.
 
-Overfull \hbox (11.6656pt too wide) in paragraph at lines 621--622
+Overfull \hbox (11.6656pt too wide) in paragraph at lines 828--829
  [][] 
  []
 
 
 
-[21 <./images/25.png>]
-<images/26.png, id=122, 680.5425pt x 478.03593pt>
+[28 <./images/25.png>]
+<images/26.png, id=166, 680.5425pt x 478.03593pt>
 File: images/26.png Graphic file (type png)
 <use images/26.png>
-Package pdftex.def Info: images/26.png  used on input line 654.
+Package pdftex.def Info: images/26.png  used on input line 861.
 (pdftex.def)             Requested size: 455.24408pt x 319.7791pt.
 
-Overfull \hbox (11.6656pt too wide) in paragraph at lines 654--655
+Overfull \hbox (11.6656pt too wide) in paragraph at lines 861--862
  [][] 
  []
 
 
-Overfull \hbox (22.91855pt too wide) in paragraph at lines 661--662
+Overfull \hbox (22.91855pt too wide) in paragraph at lines 868--869
 []\T1/LibreFranklin-TLF/regular/n/12 El pri-mer pa-so se-ra de-fi-nir la ac-ciÛn prin-ci-pal que se-r· abrir el mo-de-lo \T1/cmtt/m/n/12 hospital.medico
  []
 
 
 
-[22 <./images/26.png>]
-Overfull \hbox (3.50035pt too wide) in paragraph at lines 667--668
+[29 <./images/26.png>]
+Overfull \hbox (3.50035pt too wide) in paragraph at lines 874--875
 []\T1/LibreFranklin-TLF/bold/n/12 view_mode\T1/LibreFranklin-TLF/regular/n/12 : Ti-po de vis-tas que se mos-tra-r·n: list \T1/cmtt/m/n/12 (tabla)\T1/LibreFranklin-TLF/regular/n/12 , form \T1/cmtt/m/n/12 (formulario)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/27.png, id=127, 398.99063pt x 157.33781pt>
+<images/27.png, id=171, 398.99063pt x 157.33781pt>
 File: images/27.png Graphic file (type png)
 <use images/27.png>
-Package pdftex.def Info: images/27.png  used on input line 674.
+Package pdftex.def Info: images/27.png  used on input line 881.
 (pdftex.def)             Requested size: 369.88582pt x 145.86649pt.
 
 
-[23 <./images/27.png>]
-<images/28.png, id=132, 539.01375pt x 288.3272pt>
+[30 <./images/27.png>]
+<images/28.png, id=177, 539.01375pt x 288.3272pt>
 File: images/28.png Graphic file (type png)
 <use images/28.png>
-Package pdftex.def Info: images/28.png  used on input line 707.
+Package pdftex.def Info: images/28.png  used on input line 914.
 (pdftex.def)             Requested size: 455.24408pt x 243.52184pt.
 
-Overfull \hbox (11.6656pt too wide) in paragraph at lines 707--708
+Overfull \hbox (11.6656pt too wide) in paragraph at lines 914--915
  [][] 
  []
 
 
 
-[24 <./images/28.png>]
-<images/29.png, id=138, 502.12593pt x 444.91219pt>
+[31 <./images/28.png>]
+<images/29.png, id=182, 502.12593pt x 444.91219pt>
 File: images/29.png Graphic file (type png)
 <use images/29.png>
-Package pdftex.def Info: images/29.png  used on input line 740.
+Package pdftex.def Info: images/29.png  used on input line 947.
 (pdftex.def)             Requested size: 455.24408pt x 403.39075pt.
 
-Overfull \hbox (11.6656pt too wide) in paragraph at lines 740--741
+Overfull \hbox (11.6656pt too wide) in paragraph at lines 947--948
  [][] 
  []
 
 
 
-[25 <./images/29.png>]
-Overfull \hbox (35.26553pt too wide) in paragraph at lines 749--750
+[32 <./images/29.png>]
+Overfull \hbox (35.26553pt too wide) in paragraph at lines 956--957
 []\T1/LibreFranklin-TLF/regular/n/12 El pri-mer pa-so se-ra de-fi-nir la ac-ciÛn prin-ci-pal que se-r· abrir el mo-de-lo \T1/cmtt/m/n/12 hospital.consulta
  []
 
 
-Overfull \hbox (3.50035pt too wide) in paragraph at lines 755--756
+Overfull \hbox (3.50035pt too wide) in paragraph at lines 962--963
 []\T1/LibreFranklin-TLF/bold/n/12 view_mode\T1/LibreFranklin-TLF/regular/n/12 : Ti-po de vis-tas que se mos-tra-r·n: list \T1/cmtt/m/n/12 (tabla)\T1/LibreFranklin-TLF/regular/n/12 , form \T1/cmtt/m/n/12 (formulario)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/30.png, id=143, 495.35063pt x 158.09062pt>
+<images/30.png, id=187, 495.35063pt x 158.09062pt>
 File: images/30.png Graphic file (type png)
 <use images/30.png>
-Package pdftex.def Info: images/30.png  used on input line 762.
+Package pdftex.def Info: images/30.png  used on input line 969.
 (pdftex.def)             Requested size: 369.88582pt x 118.04903pt.
 
 
-[26 <./images/30.png>]
-<images/31.png, id=148, 560.8453pt x 312.41719pt>
+[33 <./images/30.png>]
+<images/31.png, id=192, 560.8453pt x 312.41719pt>
 File: images/31.png Graphic file (type png)
 <use images/31.png>
-Package pdftex.def Info: images/31.png  used on input line 797.
+Package pdftex.def Info: images/31.png  used on input line 1004.
 (pdftex.def)             Requested size: 455.24408pt x 253.59044pt.
 
-Overfull \hbox (11.6656pt too wide) in paragraph at lines 797--798
+Overfull \hbox (11.6656pt too wide) in paragraph at lines 1004--1005
  [][] 
  []
 
 
 
-[27 <./images/31.png>]
-<images/32.png, id=153, 674.52pt x 162.6075pt>
+[34 <./images/31.png>]
+<images/32.png, id=197, 674.52pt x 162.6075pt>
 File: images/32.png Graphic file (type png)
 <use images/32.png>
-Package pdftex.def Info: images/32.png  used on input line 826.
+Package pdftex.def Info: images/32.png  used on input line 1033.
 (pdftex.def)             Requested size: 426.79134pt x 102.88988pt.
-<images/33.png, id=154, 232.61906pt x 82.05656pt>
+<images/33.png, id=198, 232.61906pt x 82.05656pt>
 File: images/33.png Graphic file (type png)
 <use images/33.png>
-Package pdftex.def Info: images/33.png  used on input line 839.
+Package pdftex.def Info: images/33.png  used on input line 1046.
 (pdftex.def)             Requested size: 199.16928pt x 70.25925pt.
 
 
-[28 <./images/32.png> <./images/33.png>]
-<images/34.png, id=160, 346.29375pt x 229.60782pt>
+[35 <./images/32.png> <./images/33.png>]
+<images/34.png, id=204, 346.29375pt x 229.60782pt>
 File: images/34.png Graphic file (type png)
 <use images/34.png>
-Package pdftex.def Info: images/34.png  used on input line 851.
+Package pdftex.def Info: images/34.png  used on input line 1058.
 (pdftex.def)             Requested size: 426.79134pt x 282.99051pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 858--859
+Underfull \hbox (badness 10000) in paragraph at lines 1091--1092
 
  []
 
-<images/53.png, id=161, 983.92593pt x 39.14626pt>
+<images/53.png, id=205, 983.92593pt x 39.14626pt>
 File: images/53.png Graphic file (type png)
 <use images/53.png>
-Package pdftex.def Info: images/53.png  used on input line 866.
+Package pdftex.def Info: images/53.png  used on input line 1099.
 (pdftex.def)             Requested size: 426.79134pt x 16.98009pt.
 
 
-[29 <./images/34.png> <./images/53.png>]
-<images/54.png, id=167, 673.01437pt x 193.47281pt>
+[36 <./images/34.png> <./images/53.png>]
+<images/54.png, id=212, 673.01437pt x 193.47281pt>
 File: images/54.png Graphic file (type png)
 <use images/54.png>
-Package pdftex.def Info: images/54.png  used on input line 878.
+Package pdftex.def Info: images/54.png  used on input line 1111.
 (pdftex.def)             Requested size: 426.79134pt x 122.6915pt.
-<images/55.png, id=168, 595.47469pt x 213.04594pt>
+<images/55.png, id=213, 595.47469pt x 213.04594pt>
 File: images/55.png Graphic file (type png)
 <use images/55.png>
-Package pdftex.def Info: images/55.png  used on input line 888.
+Package pdftex.def Info: images/55.png  used on input line 1121.
 (pdftex.def)             Requested size: 426.79134pt x 152.69402pt.
-<images/56.png, id=169, 1011.78pt x 236.38312pt>
+<images/56.png, id=214, 1011.78pt x 236.38312pt>
 File: images/56.png Graphic file (type png)
 <use images/56.png>
-Package pdftex.def Info: images/56.png  used on input line 898.
+Package pdftex.def Info: images/56.png  used on input line 1131.
 (pdftex.def)             Requested size: 426.79134pt x 99.71306pt.
 
 
-[30 <./images/54.png> <./images/55.png> <./images/56.png>]
-<images/57.png, id=177, 583.42969pt x 202.50656pt>
+[37 <./images/54.png> <./images/55.png> <./images/56.png>]
+<images/57.png, id=221, 583.42969pt x 202.50656pt>
 File: images/57.png Graphic file (type png)
 <use images/57.png>
-Package pdftex.def Info: images/57.png  used on input line 910.
+Package pdftex.def Info: images/57.png  used on input line 1143.
 (pdftex.def)             Requested size: 426.79134pt x 148.14063pt.
-<images/58.png, id=178, 984.67876pt x 237.13594pt>
+<images/58.png, id=222, 984.67876pt x 237.13594pt>
 File: images/58.png Graphic file (type png)
 <use images/58.png>
-Package pdftex.def Info: images/58.png  used on input line 920.
+Package pdftex.def Info: images/58.png  used on input line 1153.
 (pdftex.def)             Requested size: 426.79134pt x 102.78421pt.
 
 
-[31 <./images/57.png> <./images/58.png>]
-<images/59.png, id=184, 582.67688pt x 292.09125pt>
+[38 <./images/57.png> <./images/58.png>]
+<images/59.png, id=228, 582.67688pt x 292.09125pt>
 File: images/59.png Graphic file (type png)
 <use images/59.png>
-Package pdftex.def Info: images/59.png  used on input line 932.
+Package pdftex.def Info: images/59.png  used on input line 1165.
 (pdftex.def)             Requested size: 426.79134pt x 213.95131pt.
-<images/60.png, id=185, 752.0597pt x 241.65282pt>
+<images/60.png, id=229, 752.0597pt x 241.65282pt>
 File: images/60.png Graphic file (type png)
 <use images/60.png>
-Package pdftex.def Info: images/60.png  used on input line 942.
+Package pdftex.def Info: images/60.png  used on input line 1175.
 (pdftex.def)             Requested size: 426.79134pt x 137.13881pt.
 
 
-[32 <./images/59.png> <./images/60.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 959--960
+[39 <./images/59.png> <./images/60.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1192--1193
 
  []
 
-<images/19.png, id=191, 764.8575pt x 15.80907pt>
+<images/19.png, id=235, 764.8575pt x 15.80907pt>
 File: images/19.png Graphic file (type png)
 <use images/19.png>
-Package pdftex.def Info: images/19.png  used on input line 967.
+Package pdftex.def Info: images/19.png  used on input line 1200.
 (pdftex.def)             Requested size: 426.79134pt x 8.8214pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 972--973
+Underfull \hbox (badness 10000) in paragraph at lines 1205--1206
 
  []
 
-<images/20.png, id=192, 1040.38687pt x 24.84282pt>
+<images/20.png, id=236, 1040.38687pt x 24.84282pt>
 File: images/20.png Graphic file (type png)
 <use images/20.png>
-Package pdftex.def Info: images/20.png  used on input line 980.
+Package pdftex.def Info: images/20.png  used on input line 1213.
 (pdftex.def)             Requested size: 426.79134pt x 10.19092pt.
 
 
-[33 <./images/19.png> <./images/20.png>]
-Overfull \hbox (12.50435pt too wide) in paragraph at lines 1000--1001
+[40 <./images/19.png> <./images/20.png>]
+Overfull \hbox (12.50435pt too wide) in paragraph at lines 1233--1234
 []\T1/LibreFranklin-TLF/bold/n/12 modulo_ids\T1/LibreFranklin-TLF/regular/n/12 : Atri-bu-to que de-fi-ne los mÛ-du-los que cur-sa el alumno \T1/cmtt/m/n/12 (Many2many)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/35.png, id=198, 383.93437pt x 234.1247pt>
+<images/35.png, id=242, 383.93437pt x 234.1247pt>
 File: images/35.png Graphic file (type png)
 <use images/35.png>
-Package pdftex.def Info: images/35.png  used on input line 1010.
+Package pdftex.def Info: images/35.png  used on input line 1243.
 (pdftex.def)             Requested size: 341.43306pt x 208.22028pt.
 
 
-[34 <./images/35.png>]
-Overfull \hbox (25.60281pt too wide) in paragraph at lines 1027--1028
+[41 <./images/35.png>]
+Overfull \hbox (25.60281pt too wide) in paragraph at lines 1260--1261
 []\T1/LibreFranklin-TLF/bold/n/12 modulo_ids\T1/LibreFranklin-TLF/regular/n/12 : Atri-bu-to que de-fi-ne los mÛ-du-los que im-par-te el pro-fe-sor \T1/cmtt/m/n/12 (One2many)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/36.png, id=203, 394.47375pt x 234.8775pt>
+<images/36.png, id=247, 394.47375pt x 234.8775pt>
 File: images/36.png Graphic file (type png)
 <use images/36.png>
-Package pdftex.def Info: images/36.png  used on input line 1037.
+Package pdftex.def Info: images/36.png  used on input line 1270.
 (pdftex.def)             Requested size: 341.43306pt x 203.29526pt.
 
 
-[35 <./images/36.png>]
-<images/37.png, id=208, 377.91188pt x 228.855pt>
+[42 <./images/36.png>]
+<images/37.png, id=253, 377.91188pt x 228.855pt>
 File: images/37.png Graphic file (type png)
 <use images/37.png>
-Package pdftex.def Info: images/37.png  used on input line 1064.
+Package pdftex.def Info: images/37.png  used on input line 1297.
 (pdftex.def)             Requested size: 341.43306pt x 206.76376pt.
 
 
-[36 <./images/37.png>]
-Overfull \hbox (9.37881pt too wide) in paragraph at lines 1081--1082
+[43 <./images/37.png>]
+Overfull \hbox (9.37881pt too wide) in paragraph at lines 1314--1315
 []\T1/LibreFranklin-TLF/bold/n/12 ciclo_ids\T1/LibreFranklin-TLF/regular/n/12 : Atri-bu-to que de-fi-ne los mÛ-du-los que im-par-te el pro-fe-sor \T1/cmtt/m/n/12 (Many2One)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
 
-Overfull \hbox (19.5668pt too wide) in paragraph at lines 1082--1083
+Overfull \hbox (19.5668pt too wide) in paragraph at lines 1315--1316
 []\T1/LibreFranklin-TLF/bold/n/12 profesor_ids\T1/LibreFranklin-TLF/regular/n/12 : Atri-bu-to que de-fi-ne el pro-fe-sor que im-par-te el mÛ-du-lo \T1/cmtt/m/n/12 (Many2One)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
 
-Overfull \hbox (18.92435pt too wide) in paragraph at lines 1083--1084
+Overfull \hbox (18.92435pt too wide) in paragraph at lines 1316--1317
 []\T1/LibreFranklin-TLF/bold/n/12 alumno_ids\T1/LibreFranklin-TLF/regular/n/12 : Atri-bu-to que de-fi-ne los alum-nos que cur-san el mÛ-du-lo \T1/cmtt/m/n/12 (Many2many)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/38.png, id=214, 375.65344pt x 301.8778pt>
+<images/38.png, id=258, 375.65344pt x 301.8778pt>
 File: images/38.png Graphic file (type png)
 <use images/38.png>
-Package pdftex.def Info: images/38.png  used on input line 1093.
+Package pdftex.def Info: images/38.png  used on input line 1326.
 (pdftex.def)             Requested size: 341.43306pt x 274.396pt.
 
-Overfull \hbox (10.57156pt too wide) in paragraph at lines 1102--1103
+Overfull \hbox (10.57156pt too wide) in paragraph at lines 1335--1336
 []\T1/LibreFranklin-TLF/regular/n/12 El pri-mer pa-so se-ra de-fi-nir la ac-ciÛn prin-ci-pal que se-r· abrir el mo-de-lo \T1/cmtt/m/n/12 ciclos.alumno
  []
 
 
 
-[37 <./images/38.png>]
-Overfull \hbox (3.50035pt too wide) in paragraph at lines 1108--1109
+[44 <./images/38.png>]
+Overfull \hbox (3.50035pt too wide) in paragraph at lines 1341--1342
 []\T1/LibreFranklin-TLF/bold/n/12 view_mode\T1/LibreFranklin-TLF/regular/n/12 : Ti-po de vis-tas que se mos-tra-r·n: list \T1/cmtt/m/n/12 (tabla)\T1/LibreFranklin-TLF/regular/n/12 , form \T1/cmtt/m/n/12 (formulario)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/39.png, id=219, 476.53032pt x 158.84344pt>
+<images/39.png, id=263, 476.53032pt x 158.84344pt>
 File: images/39.png Graphic file (type png)
 <use images/39.png>
-Package pdftex.def Info: images/39.png  used on input line 1115.
+Package pdftex.def Info: images/39.png  used on input line 1348.
 (pdftex.def)             Requested size: 369.88582pt x 123.30113pt.
 
 
-[38 <./images/39.png>]
-<images/43.png, id=224, 580.41844pt x 289.08pt>
+[45 <./images/39.png>]
+<images/43.png, id=268, 580.41844pt x 289.08pt>
 File: images/43.png Graphic file (type png)
 <use images/43.png>
-Package pdftex.def Info: images/43.png  used on input line 1148.
+Package pdftex.def Info: images/43.png  used on input line 1381.
 (pdftex.def)             Requested size: 369.88582pt x 184.2254pt.
 
 
-[39 <./images/43.png>]
-<images/48.png, id=229, 518.6878pt x 489.32813pt>
+[46 <./images/43.png>]
+<images/48.png, id=273, 518.6878pt x 489.32813pt>
 File: images/48.png Graphic file (type png)
 <use images/48.png>
-Package pdftex.def Info: images/48.png  used on input line 1194.
+Package pdftex.def Info: images/48.png  used on input line 1427.
 (pdftex.def)             Requested size: 369.88582pt x 348.9635pt.
 
 
-[40 <./images/48.png>]
-Overfull \hbox (22.91855pt too wide) in paragraph at lines 1203--1204
+[47 <./images/48.png>]
+Overfull \hbox (22.91855pt too wide) in paragraph at lines 1436--1437
 []\T1/LibreFranklin-TLF/regular/n/12 El pri-mer pa-so se-ra de-fi-nir la ac-ciÛn prin-ci-pal que se-r· abrir el mo-de-lo \T1/cmtt/m/n/12 ciclos.profesor
  []
 
 
-Overfull \hbox (3.50035pt too wide) in paragraph at lines 1209--1210
+Overfull \hbox (3.50035pt too wide) in paragraph at lines 1442--1443
 []\T1/LibreFranklin-TLF/bold/n/12 view_mode\T1/LibreFranklin-TLF/regular/n/12 : Ti-po de vis-tas que se mos-tra-r·n: list \T1/cmtt/m/n/12 (tabla)\T1/LibreFranklin-TLF/regular/n/12 , form \T1/cmtt/m/n/12 (formulario)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/40.png, id=234, 484.05844pt x 158.84344pt>
+<images/40.png, id=278, 484.05844pt x 158.84344pt>
 File: images/40.png Graphic file (type png)
 <use images/40.png>
-Package pdftex.def Info: images/40.png  used on input line 1216.
+Package pdftex.def Info: images/40.png  used on input line 1449.
 (pdftex.def)             Requested size: 369.88582pt x 121.38394pt.
 
 
-[41 <./images/40.png>]
-<images/44.png, id=239, 499.8675pt x 289.08pt>
+[48 <./images/40.png>]
+<images/44.png, id=284, 499.8675pt x 289.08pt>
 File: images/44.png Graphic file (type png)
 <use images/44.png>
-Package pdftex.def Info: images/44.png  used on input line 1249.
+Package pdftex.def Info: images/44.png  used on input line 1482.
 (pdftex.def)             Requested size: 369.88582pt x 213.91583pt.
 
 
-[42 <./images/44.png>]
-<images/49.png, id=245, 454.69875pt x 491.58656pt>
+[49 <./images/44.png>]
+<images/49.png, id=289, 454.69875pt x 491.58656pt>
 File: images/49.png Graphic file (type png)
 <use images/49.png>
-Package pdftex.def Info: images/49.png  used on input line 1294.
+Package pdftex.def Info: images/49.png  used on input line 1527.
 (pdftex.def)             Requested size: 369.88582pt x 399.90067pt.
 
 
-[43 <./images/49.png>]
-Overfull \hbox (4.39807pt too wide) in paragraph at lines 1303--1304
+[50 <./images/49.png>]
+Overfull \hbox (4.39807pt too wide) in paragraph at lines 1536--1537
 []\T1/LibreFranklin-TLF/regular/n/12 El pri-mer pa-so se-ra de-fi-nir la ac-ciÛn prin-ci-pal que se-r· abrir el mo-de-lo \T1/cmtt/m/n/12 ciclos.ciclo
  []
 
 
-Overfull \hbox (3.50035pt too wide) in paragraph at lines 1309--1310
+Overfull \hbox (3.50035pt too wide) in paragraph at lines 1542--1543
 []\T1/LibreFranklin-TLF/bold/n/12 view_mode\T1/LibreFranklin-TLF/regular/n/12 : Ti-po de vis-tas que se mos-tra-r·n: list \T1/cmtt/m/n/12 (tabla)\T1/LibreFranklin-TLF/regular/n/12 , form \T1/cmtt/m/n/12 (formulario)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/41.png, id=250, 468.24937pt x 158.84344pt>
+<images/41.png, id=294, 468.24937pt x 158.84344pt>
 File: images/41.png Graphic file (type png)
 <use images/41.png>
-Package pdftex.def Info: images/41.png  used on input line 1316.
+Package pdftex.def Info: images/41.png  used on input line 1549.
 (pdftex.def)             Requested size: 369.88582pt x 125.48251pt.
 
 
-[44 <./images/41.png>]
-<images/45.png, id=255, 488.57532pt x 288.3272pt>
+[51 <./images/41.png>]
+<images/45.png, id=299, 488.57532pt x 288.3272pt>
 File: images/45.png Graphic file (type png)
 <use images/45.png>
-Package pdftex.def Info: images/45.png  used on input line 1349.
+Package pdftex.def Info: images/45.png  used on input line 1582.
 (pdftex.def)             Requested size: 369.88582pt x 218.28622pt.
 
 
-[45 <./images/45.png>]
-<images/50.png, id=260, 523.20468pt x 481.8pt>
+[52 <./images/45.png>]
+<images/50.png, id=304, 523.20468pt x 481.8pt>
 File: images/50.png Graphic file (type png)
 <use images/50.png>
-Package pdftex.def Info: images/50.png  used on input line 1395.
+Package pdftex.def Info: images/50.png  used on input line 1628.
 (pdftex.def)             Requested size: 369.88582pt x 340.6174pt.
 
 
-[46 <./images/50.png>]
-Overfull \hbox (10.57156pt too wide) in paragraph at lines 1404--1405
+[53 <./images/50.png>]
+Overfull \hbox (10.57156pt too wide) in paragraph at lines 1637--1638
 []\T1/LibreFranklin-TLF/regular/n/12 El pri-mer pa-so se-ra de-fi-nir la ac-ciÛn prin-ci-pal que se-r· abrir el mo-de-lo \T1/cmtt/m/n/12 ciclos.modulo
  []
 
 
-Overfull \hbox (3.50035pt too wide) in paragraph at lines 1410--1411
+Overfull \hbox (3.50035pt too wide) in paragraph at lines 1643--1644
 []\T1/LibreFranklin-TLF/bold/n/12 view_mode\T1/LibreFranklin-TLF/regular/n/12 : Ti-po de vis-tas que se mos-tra-r·n: list \T1/cmtt/m/n/12 (tabla)\T1/LibreFranklin-TLF/regular/n/12 , form \T1/cmtt/m/n/12 (formulario)\T1/LibreFranklin-TLF/regular/n/12 . 
  []
 
-<images/42.png, id=265, 475.7775pt x 158.09062pt>
+<images/42.png, id=309, 475.7775pt x 158.09062pt>
 File: images/42.png Graphic file (type png)
 <use images/42.png>
-Package pdftex.def Info: images/42.png  used on input line 1417.
+Package pdftex.def Info: images/42.png  used on input line 1650.
 (pdftex.def)             Requested size: 369.88582pt x 122.90974pt.
 
 
-[47 <./images/42.png>]
-<images/46.png, id=270, 609.02531pt x 326.72063pt>
+[54 <./images/42.png>]
+<images/46.png, id=315, 609.02531pt x 326.72063pt>
 File: images/46.png Graphic file (type png)
 <use images/46.png>
-Package pdftex.def Info: images/46.png  used on input line 1453.
+Package pdftex.def Info: images/46.png  used on input line 1686.
 (pdftex.def)             Requested size: 369.88582pt x 198.43681pt.
 
 
-[48 <./images/46.png>]
+[55 <./images/46.png>]
 File: images/50.png Graphic file (type png)
 <use images/50.png>
-Package pdftex.def Info: images/50.png  used on input line 1499.
+Package pdftex.def Info: images/50.png  used on input line 1732.
 (pdftex.def)             Requested size: 369.88582pt x 340.6174pt.
 
 
-[49]
-<images/47.png, id=279, 675.27281pt x 197.23688pt>
+[56]
+<images/47.png, id=323, 675.27281pt x 197.23688pt>
 File: images/47.png Graphic file (type png)
 <use images/47.png>
-Package pdftex.def Info: images/47.png  used on input line 1528.
+Package pdftex.def Info: images/47.png  used on input line 1761.
 (pdftex.def)             Requested size: 426.79134pt x 124.66014pt.
 
 
-[50 <./images/47.png>]
-<images/51.png, id=284, 225.09094pt x 91.09032pt>
+[57 <./images/47.png>]
+<images/51.png, id=328, 225.09094pt x 91.09032pt>
 File: images/51.png Graphic file (type png)
 <use images/51.png>
-Package pdftex.def Info: images/51.png  used on input line 1542.
+Package pdftex.def Info: images/51.png  used on input line 1775.
 (pdftex.def)             Requested size: 199.16928pt x 80.60448pt.
-<images/52.png, id=285, 401.24907pt x 254.45062pt>
+<images/52.png, id=329, 401.24907pt x 254.45062pt>
 File: images/52.png Graphic file (type png)
 <use images/52.png>
-Package pdftex.def Info: images/52.png  used on input line 1552.
+Package pdftex.def Info: images/52.png  used on input line 1785.
 (pdftex.def)             Requested size: 284.52756pt x 180.44377pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1559--1560
+Underfull \hbox (badness 10000) in paragraph at lines 1792--1793
 
  []
 
-<images/61.png, id=286, 1029.09468pt x 27.10126pt>
+<images/61.png, id=330, 1029.09468pt x 27.10126pt>
 File: images/61.png Graphic file (type png)
 <use images/61.png>
-Package pdftex.def Info: images/61.png  used on input line 1567.
+Package pdftex.def Info: images/61.png  used on input line 1800.
 (pdftex.def)             Requested size: 426.79134pt x 11.23978pt.
 
 
-[51 <./images/51.png> <./images/52.png> <./images/61.png>]
-<images/62.png, id=293, 666.99188pt x 194.97844pt>
+[58 <./images/51.png> <./images/52.png> <./images/61.png>]
+<images/62.png, id=337, 666.99188pt x 194.97844pt>
 File: images/62.png Graphic file (type png)
 <use images/62.png>
-Package pdftex.def Info: images/62.png  used on input line 1579.
+Package pdftex.def Info: images/62.png  used on input line 1812.
 (pdftex.def)             Requested size: 426.79134pt x 124.76494pt.
-<images/63.png, id=294, 976.39781pt x 234.1247pt>
+<images/63.png, id=338, 976.39781pt x 234.1247pt>
 File: images/63.png Graphic file (type png)
 <use images/63.png>
-Package pdftex.def Info: images/63.png  used on input line 1589.
+Package pdftex.def Info: images/63.png  used on input line 1822.
 (pdftex.def)             Requested size: 426.79134pt x 102.33641pt.
-<images/64.png, id=295, 868.74562pt x 218.31563pt>
+<images/64.png, id=339, 868.74562pt x 218.31563pt>
 File: images/64.png Graphic file (type png)
 <use images/64.png>
-Package pdftex.def Info: images/64.png  used on input line 1599.
+Package pdftex.def Info: images/64.png  used on input line 1832.
 (pdftex.def)             Requested size: 426.79134pt x 107.2554pt.
 
 
-[52 <./images/62.png> <./images/63.png> <./images/64.png>]
-<images/65.png, id=302, 1053.1847pt x 231.11343pt>
+[59 <./images/62.png> <./images/63.png> <./images/64.png>]
+<images/65.png, id=346, 1053.1847pt x 231.11343pt>
 File: images/65.png Graphic file (type png)
 <use images/65.png>
-Package pdftex.def Info: images/65.png  used on input line 1611.
+Package pdftex.def Info: images/65.png  used on input line 1844.
 (pdftex.def)             Requested size: 426.79134pt x 93.65685pt.
-<images/66.png, id=303, 735.49782pt x 316.93407pt>
+<images/66.png, id=347, 735.49782pt x 316.93407pt>
 File: images/66.png Graphic file (type png)
 <use images/66.png>
-Package pdftex.def Info: images/66.png  used on input line 1621.
+Package pdftex.def Info: images/66.png  used on input line 1854.
 (pdftex.def)             Requested size: 426.79134pt x 183.91376pt.
 
 
-[53 <./images/65.png> <./images/66.png>]
-<images/67.png, id=309, 791.95876pt x 335.00156pt>
+[60 <./images/65.png> <./images/66.png>]
+<images/67.png, id=354, 791.95876pt x 335.00156pt>
 File: images/67.png Graphic file (type png)
 <use images/67.png>
-Package pdftex.def Info: images/67.png  used on input line 1633.
+Package pdftex.def Info: images/67.png  used on input line 1866.
 (pdftex.def)             Requested size: 426.79134pt x 180.5352pt.
-<images/68.png, id=310, 377.15906pt x 273.27094pt>
+<images/68.png, id=355, 377.15906pt x 273.27094pt>
 File: images/68.png Graphic file (type png)
 <use images/68.png>
-Package pdftex.def Info: images/68.png  used on input line 1643.
+Package pdftex.def Info: images/68.png  used on input line 1876.
 (pdftex.def)             Requested size: 284.52756pt x 206.15358pt.
 
 
-[54 <./images/67.png> <./images/68.png>]
-<images/69.png, id=317, 392.21532pt x 238.64156pt>
+[61 <./images/67.png> <./images/68.png>]
+<images/69.png, id=361, 392.21532pt x 238.64156pt>
 File: images/69.png Graphic file (type png)
 <use images/69.png>
-Package pdftex.def Info: images/69.png  used on input line 1655.
+Package pdftex.def Info: images/69.png  used on input line 1888.
 (pdftex.def)             Requested size: 284.52756pt x 173.12903pt.
-<images/70.png, id=318, 487.8225pt x 145.29282pt>
+<images/70.png, id=362, 487.8225pt x 145.29282pt>
 File: images/70.png Graphic file (type png)
 <use images/70.png>
-Package pdftex.def Info: images/70.png  used on input line 1665.
+Package pdftex.def Info: images/70.png  used on input line 1898.
 (pdftex.def)             Requested size: 284.52756pt x 84.74431pt.
 
 
-[55 <./images/69.png> <./images/70.png>] (PR√ÅCTICA 4 - ADRIANO.aux
+[62 <./images/69.png> <./images/70.png>] (PR√ÅCTICA 4 - ADRIANO.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -1024,17 +1102,17 @@ L3 programming layer <2025-09-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5454 strings out of 468130
- 98802 string characters out of 5428697
+ 5531 strings out of 468130
+ 100331 string characters out of 5428697
  497915 words of memory out of 5000000
- 34003 multiletter control sequences out of 15000+600000
+ 34080 multiletter control sequences out of 15000+600000
  685555 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,6n,73p,524b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\akadoblee\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/librefranklin/LibreFranklin-Bold.pfb><C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/fonts/type1/impallari/librefranklin/LibreFranklin-Regular.pfb>
-Output written on "PR√ÅCTICA 4 - ADRIANO.pdf" (56 pages, 1782862 bytes).
+Output written on "PR√ÅCTICA 4 - ADRIANO.pdf" (63 pages, 2105919 bytes).
 PDF statistics:
- 392 PDF objects out of 1000 (max. 8388607)
+ 438 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 351 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 406 words of extra memory for PDF output out of 10000 (max. 10000000)
 

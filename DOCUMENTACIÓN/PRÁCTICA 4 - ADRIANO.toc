@@ -9,35 +9,41 @@
 \contentsline {section}{\numberline {4}ACTIVIDAD 2}{16}{}%
 \contentsline {subsection}{\numberline {4.1}Introducción}{16}{}%
 \contentsline {subsection}{\numberline {4.2}Modelos}{16}{}%
-\contentsline {subsection}{\numberline {4.3}Vistas}{16}{}%
-\contentsline {subsection}{\numberline {4.4}Funcionamiento}{16}{}%
-\contentsline {section}{\numberline {5}ACTIVIDAD 3}{17}{}%
-\contentsline {subsection}{\numberline {5.1}Introducción}{17}{}%
-\contentsline {subsection}{\numberline {5.2}Base del Módulo}{17}{}%
-\contentsline {subsection}{\numberline {5.3}Modelos}{17}{}%
-\contentsline {subsubsection}{\numberline {5.3.1}Modelo Paciente}{17}{}%
-\contentsline {subsubsection}{\numberline {5.3.2}Modelo Médico}{18}{}%
-\contentsline {subsubsection}{\numberline {5.3.3}Modelo Consulta}{19}{}%
-\contentsline {subsection}{\numberline {5.4}Vistas}{20}{}%
-\contentsline {subsubsection}{\numberline {5.4.1}Vistas de Paciente}{20}{}%
-\contentsline {subsubsection}{\numberline {5.4.2}Vistas de Médico}{23}{}%
-\contentsline {subsubsection}{\numberline {5.4.3}Vistas de Consulta}{26}{}%
-\contentsline {subsubsection}{\numberline {5.4.4}Vistas de Menús}{27}{}%
-\contentsline {subsection}{\numberline {5.5}Otros archivos}{28}{}%
-\contentsline {subsection}{\numberline {5.6}Funcionamiento}{29}{}%
-\contentsline {section}{\numberline {6}ACTIVIDAD 4}{33}{}%
-\contentsline {subsection}{\numberline {6.1}Introducción}{33}{}%
-\contentsline {subsection}{\numberline {6.2}Base del Módulo}{33}{}%
-\contentsline {subsection}{\numberline {6.3}Modelos}{34}{}%
-\contentsline {subsubsection}{\numberline {6.3.1}Modelo Alumno}{34}{}%
-\contentsline {subsubsection}{\numberline {6.3.2}Modelo Profesor}{35}{}%
-\contentsline {subsubsection}{\numberline {6.3.3}Modelo Ciclo Formativo}{36}{}%
-\contentsline {subsubsection}{\numberline {6.3.4}Modelo Módulo}{37}{}%
-\contentsline {subsection}{\numberline {6.4}Vistas}{38}{}%
-\contentsline {subsubsection}{\numberline {6.4.1}Vistas de Alumno}{38}{}%
-\contentsline {subsubsection}{\numberline {6.4.2}Vistas de Profesor}{41}{}%
-\contentsline {subsubsection}{\numberline {6.4.3}Vistas de Ciclo Formativo}{44}{}%
-\contentsline {subsubsection}{\numberline {6.4.4}Vistas de Módulo}{47}{}%
-\contentsline {subsubsection}{\numberline {6.4.5}Vistas de Menús}{50}{}%
-\contentsline {subsection}{\numberline {6.5}Otros archivos}{51}{}%
-\contentsline {subsection}{\numberline {6.6}Funcionamiento}{51}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}Modelo Socio}{16}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}Modelo Ejemplar}{17}{}%
+\contentsline {subsubsection}{\numberline {4.2.3}Modelo Cómic}{18}{}%
+\contentsline {subsection}{\numberline {4.3}Vistas}{20}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}Vistas de Cómic}{20}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}Vistas de Socio}{20}{}%
+\contentsline {subsubsection}{\numberline {4.3.3}Vistas de Préstamo}{20}{}%
+\contentsline {subsection}{\numberline {4.4}Funcionamiento}{21}{}%
+\contentsline {section}{\numberline {5}ACTIVIDAD 3}{24}{}%
+\contentsline {subsection}{\numberline {5.1}Introducción}{24}{}%
+\contentsline {subsection}{\numberline {5.2}Base del Módulo}{24}{}%
+\contentsline {subsection}{\numberline {5.3}Modelos}{24}{}%
+\contentsline {subsubsection}{\numberline {5.3.1}Modelo Paciente}{24}{}%
+\contentsline {subsubsection}{\numberline {5.3.2}Modelo Médico}{25}{}%
+\contentsline {subsubsection}{\numberline {5.3.3}Modelo Consulta}{26}{}%
+\contentsline {subsection}{\numberline {5.4}Vistas}{27}{}%
+\contentsline {subsubsection}{\numberline {5.4.1}Vistas de Paciente}{27}{}%
+\contentsline {subsubsection}{\numberline {5.4.2}Vistas de Médico}{30}{}%
+\contentsline {subsubsection}{\numberline {5.4.3}Vistas de Consulta}{33}{}%
+\contentsline {subsubsection}{\numberline {5.4.4}Vistas de Menús}{34}{}%
+\contentsline {subsection}{\numberline {5.5}Otros archivos}{35}{}%
+\contentsline {subsection}{\numberline {5.6}Funcionamiento}{36}{}%
+\contentsline {section}{\numberline {6}ACTIVIDAD 4}{40}{}%
+\contentsline {subsection}{\numberline {6.1}Introducción}{40}{}%
+\contentsline {subsection}{\numberline {6.2}Base del Módulo}{40}{}%
+\contentsline {subsection}{\numberline {6.3}Modelos}{41}{}%
+\contentsline {subsubsection}{\numberline {6.3.1}Modelo Alumno}{41}{}%
+\contentsline {subsubsection}{\numberline {6.3.2}Modelo Profesor}{42}{}%
+\contentsline {subsubsection}{\numberline {6.3.3}Modelo Ciclo Formativo}{43}{}%
+\contentsline {subsubsection}{\numberline {6.3.4}Modelo Módulo}{44}{}%
+\contentsline {subsection}{\numberline {6.4}Vistas}{45}{}%
+\contentsline {subsubsection}{\numberline {6.4.1}Vistas de Alumno}{45}{}%
+\contentsline {subsubsection}{\numberline {6.4.2}Vistas de Profesor}{48}{}%
+\contentsline {subsubsection}{\numberline {6.4.3}Vistas de Ciclo Formativo}{51}{}%
+\contentsline {subsubsection}{\numberline {6.4.4}Vistas de Módulo}{54}{}%
+\contentsline {subsubsection}{\numberline {6.4.5}Vistas de Menús}{57}{}%
+\contentsline {subsection}{\numberline {6.5}Otros archivos}{58}{}%
+\contentsline {subsection}{\numberline {6.6}Funcionamiento}{58}{}%
