@@ -1,0 +1,510 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{tabularx}
+\usepackage{fancyvrb}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{ragged2e}
+\usepackage[T1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{librefranklin}
+
+\setcounter{tocdepth}{2}
+\setlength{\parindent}{0pt}
+\onehalfspacing
+
+\begin{document}
+
+\begin{titlepage}
+
+    \centering
+    \vspace*{1 cm}
+    \Huge
+    \textbf{Práctica 4}
+
+    \vspace{0.5 cm}
+    \Large
+    Sistemas de Gestión Empresarial
+
+    \vspace{5.5 cm}
+    \textbf{Adrián Condines Celada}
+
+    \vspace{0.8 cm}    
+    \normalsize
+    Aula Estudio\\
+
+    \vspace{0.8 cm}
+    2º Ciclo Superior - Desarrollo de Aplicaciones Multiplataforma\\
+
+    \vspace{0.8 cm}
+    Curso 2025 - 2026
+
+\end{titlepage}
+
+\justify
+\tableofcontents
+\newpage
+
+\section{INTRODUCCIÓN Y OBJETIVOS}
+
+\justify
+El objetivo de esta práctica es la modificación y creación de módulos personalizados en Odoo 
+
+\section{PASO PREVIO PARA ACTIVIDADES 1 y 2}
+
+\justify
+Para las actividades 1 y 2, previamente se clonará el repositorio que contiene los módulos de ejemplo que serán necesarios para la realización de dichas actividades. Para ello se abrirá una terminal en el directorio en el que se desea clonar el repositorio y se ejecutará el siguiente comando: \newline
+
+\centering
+\texttt{git clone https://github.com/sergarb1/OdooModulosEjemplos}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/1.png}
+
+\end{figure}
+
+\justify
+\section{ACTIVIDAD 1}
+
+\justify
+El objetivo de esta actividad es modificar el ejemplo más básico de la \textbf{Lista de Tareas} \texttt{(Directorio EJ02-ListaTareas del repositorio clonado previamente)} para que las tareas se muestren en formato \textbf{Kanban}. También se debe crear una nueva vista para visualizar las tareas en formato \textbf{Calendario} según la fecha definida.
+
+\newpage
+
+\justify
+Partiendo del directorio mencionado previamente, el primer paso será modificar el archivo \texttt{models/models.py} para añadir el nuevo campo \textbf{Fecha} al modelo de la lista de tareas.
+
+\justify
+Para definir el modelo se crea una nueva clase de Python que hereda de la clase \textbf{models.Model} y también se han definido los siguientes elementos:
+
+\begin{itemize}
+
+    \item  \textbf{\_name}: Define como como Odoo guardará el módulo en la base de datos.
+    \item  \textbf{\_description}: Descripción del módulo.
+    \item  \textbf{\_rec\_name}: Campo a mostrar por defecto en las vistas y menús.
+    \item  \textbf{tarea}: Nombre de la tarea \texttt{(String)}.
+    \item  \textbf{prioridad}: Nivel de prioridad de la tarea \texttt{(Integer)}.
+    \item  \textbf{urgente}: Atributo computado que define si la tarea es urgente o no \texttt{(Booleano)}.
+    \item  \textbf{realizada}: Define si la tarea ha sido realizada o no \texttt{(Booleano)}.
+    \item  \textbf{\_value\_urgente}: Método que se encarga de calcular el valor del atributo 'urgente' en función del valor del atributo 'prioridad'.
+
+\end{itemize}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/2.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+Una vez modificado el modelo, hay que actualizar las vistas del módulo para que reflejen los cambios realizado en el modelo y también para añadir los nuevos tipos de vistas requeridos para la realización de la actividad. Para ello se modificará el archivo \texttt{views/views.xml}.
+
+\justify
+El primer paso sera definir la acción principal de módulo que será abrir el modelo \texttt{lista\_tareas.lista} y muestra sus vistas. Se deben de definir los siguientes campos:
+
+\begin{itemize}
+
+    \item  \textbf{name}: Título visible de la ventana.
+    \item  \textbf{res\_model}: Modelo al que se refiere la acción.
+    \item  \textbf{view\_mode}: Tipo de vistas que se mostrarán: list \texttt{(tabla)}, form \texttt{(formulario)}, kanban \texttt{(kanban)}, calendar \texttt{(calendario)}.
+
+\end{itemize}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/3.png}
+
+\end{figure}
+
+\justify
+A continuación se definirán los menús del módulo que aparecerán en la parte superior de la interfaz de Odoo y para ello se les debe asignar un atributo \textbf{id} que será el identificador único de cada menú, un atributo \textbf{name} que será el nombre visble del menú y un atributo \textbf{parent} que será el menú padre del menú. 
+
+\newpage
+
+\justify
+Para ello, se definirán los siguientes \texttt{menuitem}:
+
+\begin{itemize}
+
+    \item  \textbf{lista\_tareas\_menu\_root}: Menú raíz del módulo.
+    \item  \textbf{lista\_tareas\_menu\_1}: Submenú dentro del menú raíz que puede agrupar más opciones si se llegarán a necesitar.
+    \item  \textbf{lista\_tareas\_menu\_1\_list}: Opción del menú que ejecuta la acción principal del módulo definida en el paso anterior (se le añade el atributo \textbf{action}, que hace referencia a la acción del módulo).
+    
+\end{itemize}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/4.png}
+
+\end{figure}
+
+\justify
+Una vez definidas las acciones y los menús, se procederá a crear y explicar todas las vistas del módulo. La primera de ellas será la vista de tipo \textbf{list} que mostrará la lista de tareas en una tabla y para ello se utiliza la etiqueta \textbf{record} con los atributos \textbf{id} (identificador único de la vista), \textbf{model} (modelo de la vista).
+
+\justify
+Dentro de la etiqueta record se definen los siguientes campos:
+
+\begin{itemize}
+
+    \item  \textbf{name}: Nombre interno de la vista.
+    \item  \textbf{model}: Modelo utilizado enla vista.
+    \item  \textbf{arch}: Define la estructura XML que tendrá la tarea.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Dentro del campo con \texttt{name:} \textbf{arch} se define el tipo de vista y su orden (se ordenará en función del valor del atributo \textbf{prioridad} y en orden descendente), que en este caso será \textbf{list} y también se definen los campos que se mostrarán en la vista:
+
+\begin{itemize}
+
+    \item  \textbf{tarea}: Nombre de la tarea \texttt{(String)}.
+    \item  \textbf{prioridad}: Nivel de prioridad de la tarea \texttt{(Integer)}.
+    \item  \textbf{fecha}: Fecha límite de la tarea \texttt{(Date)}.
+    \item  \textbf{urgente}: Atributo computado que define si la tarea es urgente o no \texttt{(Booleano)}.
+    \item  \textbf{realizada}: Define si la tarea ha sido realizada o no \texttt{(Booleano)}.
+
+\end{itemize}
+
+\justify
+Así quedaría la vista de tipo \textbf{list}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/5.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+La siguiente vista a explicar es la vista de de tipo \textbf{form} que se mostrará cuando el usuario cree o edite una tarea. Para ello, al igual que con la vista anterior, se debe utilizar la etiqueta \textbf{record} con los atributos \textbf{id} (identificador único de la vista), \textbf{model} (modelo de la vista).
+
+\justify
+Dentro de la etiqueta record se definen los siguientes campos:
+
+\begin{itemize}
+
+    \item  \textbf{name}: Nombre interno de la vista.
+    \item  \textbf{model}: Modelo utilizado en la vista.
+    \item  \textbf{arch}: Define la estructura XML que tendrá la tarea.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name:} \textbf{arch} se define el tipo de vista y su orden que en este caso será \textbf{form} con el atributo \textbf{name} para darle un título al formulario. En el interior de la etiqueta que define el tipo de vista se definirá una etiqueta \textbf{sheet}, que actúa como el contenedor principal del formulario.
+
+\justify
+Dentro de la etiqueta \textbf{sheet}, están definidos dos grupos de campos y en ellos se definen los siguientes atributos:
+
+\begin{itemize}
+
+    \item  \textbf{tarea}: Nombre de la tarea \texttt{(String)}.
+    \item  \textbf{fecha}: Fecha límite de la tarea \texttt{(Date)}.
+    \item  \textbf{realizada}: Define si la tarea ha sido realizada o no \texttt{(Booleano)}.
+    \item  \textbf{prioridad}: Nivel de prioridad de la tarea \texttt{(Integer)}.
+    \item  \textbf{urgente}: Atributo computado que define si la tarea es urgente o no \texttt{(Booleano)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría la vista de tipo \textbf{form}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/6.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+La siguiente vista a explicar es la vista de tipo \textbf{calendar} y para ello como en todas las vistas se define con la etiqueta \textbf{record} con los atributos \textbf{id} (identificador único de la vista), \textbf{model} (modelo de la vista).
+
+\justify
+Dentro de la etiqueta record se definen los siguientes campos:
+
+\begin{itemize}
+
+    \item  \textbf{name}: Nombre interno de la vista.
+    \item  \textbf{model}: Modelo utilizado en la vista.
+    \item  \textbf{arch}: Define la estructura XML que tendrá la tarea.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name:} \textbf{arch} se define el tipo de vista y su orden que en este caso será \textbf{calendar} con los siguientes atributos:
+
+\begin{itemize}
+
+    \item  \textbf{string}: Título de la vista.
+    \item  \textbf{date\_start}: Fecha de inicio de la tarea \texttt{(Date)}.
+    \item  \textbf{color}: Adignación de colores a las tareas según su prioridad.
+    \item  \textbf{mode}: Define el modo de la vista que en este caso será dividida por meses.
+
+\end{itemize}
+
+\justify
+En la vista de calendario se mostrarán los siguientes datos de la tarea:
+
+\begin{itemize}
+
+    \item  \textbf{tarea}: Nombre de la tarea \texttt{(String)}.
+    \item  \textbf{prioridad}: Nivel de prioridad de la tarea \texttt{(Integer)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría la vista de tipo \textbf{calendar}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/7.png}
+
+\end{figure}
+
+\justify
+La siguiente vista a explicar es la vista de tipo \textbf{kanban} y para ello como en todas las vistas se define con la etiqueta \textbf{record} con los atributos \textbf{id} (identificador único de la vista), \textbf{model} (modelo de la vista).
+
+\justify
+Dentro de la etiqueta record se definen los siguientes campos:
+
+\begin{itemize}
+
+    \item  \textbf{name}: Nombre interno de la vista.
+    \item  \textbf{model}: Modelo utilizado en la vista.
+    \item  \textbf{arch}: Define la estructura XML que tendrá la tarea.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Dentro del campo con \texttt{name:} \textbf{arch} se define el tipo de vista, que en este caso será \textbf{kanban} con los siguientes atributos:
+
+\begin{itemize}
+
+    \item  \textbf{tarea}: Título de la vista.
+    \item  \textbf{fecha}: Fecha límite de la tarea \texttt{(Date)}.
+    \item  \textbf{prioridad}: Nivel de prioridad de la tarea \texttt{(Integer)}.
+
+\end{itemize}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/8.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+Posteriormente se diseña una plantilla para mostrar cada una de las tareas en la vista, quedando así la plantilla para la vista de tipo \textbf{kanban}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=8.5cm]{images/9.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+La última vista que queda por explicar es la vista de tipo \textbf{search} y para ello como en todas las vistas se define con la etiqueta \textbf{record} con los atributos \textbf{id} (identificador único de la vista), \textbf{model} (modelo de la vista).
+
+\justify
+Dentro de la etiqueta record se definen los siguientes campos:
+
+\begin{itemize}
+
+    \item  \textbf{name}: Nombre interno de la vista.
+    \item  \textbf{model}: Modelo utilizado en la vista.
+    \item  \textbf{arch}: Define la estructura XML que tendrá la tarea.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name:} \textbf{arch} se define la estructura XML que tendrá la tarea. En este caso será del tipo \textbf{search} con el atributo \textbf{string} que define el título de la vista. 
+
+\justify
+En esta vista el único campo que interesa es el nombre de la tarea ya que los demás campos no son relevantes para una búsqueda de texto y también se añaden filtros para mostrar las tareas que son urgentes y las que ya están realizadas, quedando así la vista de tipo \textbf{search}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/10.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+Ya terminada la explicación del modelo y las vistas del módulo, se pondrá a prueba su funcionamiento y para ello el primer paso es pasar el directorio del módulo del equipo local al contenedor de Odoo, concretamente a la carpeta mapeada para almacenar los módulos extra añadidos por el usuario y para ello se utilizará el siguiente comando: \newline
+
+\centering
+\texttt{docker cp <ruta\_módulo> <contenedor\_odoo>:/mnt/extra-addons/<directorio>}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/11.png}
+
+\end{figure}
+
+\justify
+Una vez que se haya copiado el módulo al contenedor de Odoo, se debe activar el \textbf{Modo Desarrollador} y actualizar la lista de aplicaciones (explicado en la práctica anterior). Posteriormente se debe buscar el módulo en la lista de aplicaciones e instalarlo pulsando sobre el botón lila de \textbf{Activar} (se instalará el primer módulo de la lista ya que el segundo es el de la práctica anterior).
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/12.png}
+
+\end{figure}
+
+\justify
+Una vez instalado el módulo, se accederá a su interfaz mediante el menú de Odoo y se crearán nuevas tareas para comprobar su funcionamiento. La vista de creación de tarea (\textbf{form}) se ve de la siguiente manera:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/13.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+Como se puede comprobar, las tareas se crean correctamente y así se muestran en la vista de tipo \textbf{list}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/14.png}
+
+\end{figure}
+
+\justify
+Así se mostrarían las tareas en la vista de tipo \textbf{kanban}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/15.png}
+
+\end{figure}
+
+\justify
+Y por último, así se mostrarían las tareas en la vista de tipo \textbf{calendar}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/16.png}
+
+\end{figure}
+
+\newpage
+
+\section{ACTIVIDAD 2}
+
+\justify
+El objetivo de esta actividad es amplicar el módulo de ejemplo de la \textbf{Biblioteca} \texttt{Directorio EJ03-ComicsSimple del repositorio clonado previamente} para que incluya la posibilidad de incluir \textbf{Socios}. También se debe implementar un sistema de gestión de \textbf{Préstamos de Cómics} para que los socios de la biblioteca puedan llevarse cómics prestados.
+
+\newpage
+
+\section{ACTIVIDAD 3}
+
+\subsection{Introducción}
+
+\justify
+El objetivo de esta actividad es crear un módulo para simular un \textbf{Sistema de Consultas} de un hospital en el que intervienen \textbf{Médicos} y \textbf{Pacientes}. 
+
+\subsection{Base del Módulo}
+
+\justify
+Para ello el primer paso es crear la base del módulo utilizando \textbf{Odoo Scaffold} y para ello se utilizará el siguiente comando: \newline
+
+\centering
+\texttt{docker exec -it <contenedor\_odoo> odoo scaffold <nombre\_directorio> <ruta\_addons>}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/17.png}
+
+\end{figure}
+
+\justify
+Una vez creada la base de módulo, se debe pasar el directorio del módulo del contenedor de Odoo al equipo local para poder trabajar con él y para ello se utilizará el siguiente comando: \newline
+
+\centering
+\texttt{docker cp <contenedor\_odoo>:<directorio\_módulo> <ruta\_directorio\_local>}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/18.png}
+
+\end{figure}
+
+\justify
+\subsection{Modelos}
+
+\subsubsection{Modelo Paciente}
+
+
+\justify
+
+\newpage
+
+\justify
+\section{ACTIVIDAD 4}
+
+\justify
+El objetivo de esta actividad es desarrollar un módulo para simular la gestión de \textbf{Ciclos Formativos} en un instituto en el que se tendrán en cuenta los mismos Ciclos Formativos, los \textbf{Módulos} del ciclo, los \textbf{Profesores} que imparten dichos ciclos y los \textbf{Alumnos} matriculados.
+
+\justify
+Para ello el primer paso es crear la base del módulo utilizando \textbf{Odoo Scaffold} y para ello se utilizará el siguiente comando: \newline
+
+\centering
+\texttt{docker exec -it <contenedor\_odoo> odoo scaffold <nombre\_directorio> <ruta\_addons>}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/19.png}
+
+\end{figure}
+
+\justify
+Una vez creada la base de módulo, se debe pasar el directorio del módulo del contenedor de Odoo al equipo local para poder trabajar con él y para ello se utilizará el siguiente comando: \newline
+
+\centering
+\texttt{docker cp <contenedor\_odoo>:<directorio\_módulo> <ruta\_directorio\_local>}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/20.png}
+
+\end{figure}
+
+\end{document}

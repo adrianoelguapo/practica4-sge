@@ -1,0 +1,76 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<odoo>
+
+    <!-- Acción principal del módulo que abre el modelo biblioteca.socio y muestra sus vistas. -->
+    <record id = 'biblioteca_socio_action' model = 'ir.actions.act_window'>
+
+        <!-- Título visible de la ventana -->
+        <field name = "name">Socios</field>
+
+        <!-- Modelo al que se refiere la acción -->
+        <field name = "res_model">biblioteca.socio</field>
+
+        <!-- Tipo de vistas que se mostrarán: list (tabla), form (formulario) -->
+        <field name = "view_mode">list,form</field>
+
+    </record>
+
+    <!-- Menú del modelo que aparecerá en la barra superior -->
+    <menuitem name = "Socios" id = "biblioteca_socio_menu" parent = "biblioteca_base_menu" action = "biblioteca_socio_action"/>
+
+    <!-- Vista para crear o editar un socio -->
+    <record id = "biblioteca_socio_view_form" model = "ir.ui.view">
+
+        <!-- Nombre de la vista -->
+        <field name = "name">Formulario de Socio</field>
+
+        <!-- Modelo al que pertenece esta vista -->
+        <field name = "model">biblioteca.socio</field>
+
+        <!-- Estructura XML de la vista -->
+        <field name = "arch" type = "xml">
+
+            <!-- Vista tipo formulario -->
+            <form>
+
+                <!-- Agrupación de campos -->
+                <group>
+
+                    <field name = "nombre"/>            <!-- Nombre del socio -->
+                    <field name = "apellido"/>          <!-- Apellido del socio -->
+                    <field name = "identificador"/>     <!-- Identificador del socio -->
+
+                </group>
+
+            </form>
+
+        </field>
+
+    </record>
+
+    <!-- Vista de lista de socios -->
+    <record id = "biblioteca_socio_view_tree" model = "ir.ui.view">
+
+        <!-- Nombre interno de la vista -->
+        <field name = "name">Lista de Socios</field>
+
+        <!-- Modelo al que pertenece esta vista -->
+        <field name = "model">biblioteca.socio</field>
+
+        <!-- Estructura XML de la vista -->
+        <field name = "arch" type = "xml">
+
+            <!-- Vista tipo lista -->
+            <list>
+
+                <field name = "nombre"/>            <!-- Nombre del socio -->
+                <field name = "apellido"/>          <!-- Apellido del socio -->
+                <field name = "identificador"/>     <!-- Identificador del socio -->
+
+            </list>
+
+        </field>
+
+    </record>
+
+</odoo>

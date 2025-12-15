@@ -1,0 +1,87 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<odoo>
+
+    <!-- Acción para abrir la vista de médicos -->
+    <record id = "action_medico" model = "ir.actions.act_window">
+
+        <!-- Título visible de la ventana -->
+        <field name = "name">Médicos</field>
+
+        <!-- Modelo al que se refiere la acción -->
+        <field name = "res_model">hospital.medico</field>
+
+        <!-- Tipo de vistas que se mostrarán: list (tabla), form (formulario) -->
+        <field name = "view_mode">list,form</field>
+
+    </record>
+
+    <!-- Vista de lista de médicos -->
+    <record id = "view_medico_list" model = "ir.ui.view">
+
+        <!-- Nombre de la vista -->
+        <field name = "name">hospital.medico.list</field>
+
+        <!-- Modelo al que pertenece esta vista -->
+        <field name = "model">hospital.medico</field>
+
+        <!-- Estructura XML de la vista -->
+        <field name = "arch" type = "xml">
+
+            <!-- Vista tipo lista -->
+            <list string = "Médicos">
+
+                <!-- Campos visibles en la vista de lista -->
+                <field name = "name" string = "Nombre"/>                        <!-- Nombre del médico -->
+                <field name = "numero_colegiado" string = "Nº Colegiado"/>      <!-- Número de colegiado -->
+
+            </list>
+
+        </field>
+
+    </record>
+
+    <!-- Vista de formulario para médicos -->
+    <record id = "view_medico_form" model = "ir.ui.view">
+
+        <!-- Nombre de la vista -->
+        <field name = "name">hospital.medico.form</field>
+
+        <!-- Modelo al que pertenece esta vista -->
+        <field name = "model">hospital.medico</field>
+
+        <!-- Estructura XML de la vista -->
+        <field name = "arch" type = "xml">
+
+            <!-- Vista tipo formulario -->
+            <form string = "Médico">
+
+                <!-- Contenedor principal del formulario -->
+                <sheet>
+
+                    <!-- Título del formulario -->
+                    <div class = "oe_title">
+
+                        <h1>
+
+                            <field name = "name" placeholder = "Nombre completo del médico"/>   <!-- Nombre del médico -->
+
+                        </h1>
+
+                    </div>
+
+                    <!-- Campo para número de colegiado -->
+                    <group>
+
+                        <field name = "numero_colegiado" string = "Número de Colegiado"/>       <!-- Número de colegiado -->
+
+                    </group>
+
+                </sheet>
+
+            </form>
+
+        </field>
+
+    </record>
+
+</odoo>

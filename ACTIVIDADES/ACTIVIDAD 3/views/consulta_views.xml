@@ -1,0 +1,94 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<odoo>
+
+    <!-- Acción principal del módulo que abre el modelo hospital.consulta y muestra sus vistas. -->
+    <record id = "action_consulta" model = "ir.actions.act_window">
+
+        <!-- Título visible de la ventana -->
+        <field name = "name">Consultas</field>
+
+        <!-- Modelo al que se refiere la acción -->
+        <field name = "res_model">hospital.consulta</field>
+
+        <!-- Tipo de vistas que se mostrarán: list (tabla), form (formulario) -->
+        <field name = "view_mode">list,form</field>
+
+    </record>
+
+    <!-- Vista de lista para consultas -->
+    <record id = "view_consulta_list" model = "ir.ui.view">
+
+        <!-- Nombre de la vista -->
+        <field name = "name">hospital.consulta.list</field>
+
+        <!-- Modelo al que pertenece esta vista -->
+        <field name = "model">hospital.consulta</field>
+
+        <!-- Estructura XML de la vista -->
+        <field name = "arch" type = "xml">
+
+            <!-- Vista tipo lista -->
+            <list string = "Consultas">
+
+                <!-- Campos visibles en la vista de lista -->
+                <field name = "paciente_id" string = "Paciente"/>           <!-- Relación con paciente -->
+                <field name = "medico_id" string = "Médico"/>               <!-- Relación con médico -->
+                <field name = "fecha_hora" string = "Fecha y Hora"/>        <!-- Fecha y hora de la consulta -->
+                <field name = "diagnostico" string = "Diagnóstico"/>        <!-- Diagnóstico -->
+
+            </list>
+
+        </field>
+
+    </record>
+
+    <!-- Vista de formulario para crear y editar consultas -->
+    <record id = "view_consulta_form" model = "ir.ui.view">
+
+        <!-- Nombre de la vista -->
+        <field name = "name">hospital.consulta.form</field>
+
+        <!-- Modelo al que pertenece esta vista -->
+        <field name = "model">hospital.consulta</field>
+
+        <!-- Estructura XML de la vista -->
+        <field name = "arch" type = "xml">
+
+            <!-- Vista tipo formulario -->
+            <form string = "Consulta">
+
+                <!-- Contenedor principal del formulario -->
+                <sheet>
+
+                    <!-- Título del formulario -->
+                    <div class = "oe_title">
+
+                        <h1>Nueva Consulta</h1>
+
+                    </div>
+
+                    <!-- Agrupación de campos -->
+                    <group>
+
+                        <field name = "paciente_id" string = "Paciente"/>       <!-- Relación con paciente (búsqueda rápida) -->
+                        <field name = "medico_id" string = "Médico"/>           <!-- Relación con médico (búsqueda rápida) -->
+                        <field name = "fecha_hora" string = "Fecha y Hora"/>    <!-- Fecha y hora de la consulta -->
+
+                    </group>
+
+                    <!-- Diagnóstico (textarea para texto largo) -->
+                    <group>
+
+                        <field name = "diagnostico" widget = "textarea" string = "Diagnóstico" placeholder = "Escriba el diagnóstico aquí..."/>
+
+                    </group>
+
+                </sheet>
+
+            </form>
+
+        </field>
+        
+    </record>
+
+</odoo>

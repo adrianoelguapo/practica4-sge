@@ -1,0 +1,137 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<odoo>
+
+    <!-- Acción principal del módulo que abre el modelo biblioteca.comic y muestra sus vistas. -->
+    <record id = "biblioteca_comic_action" model = "ir.actions.act_window">
+
+        <!-- Título visible de la ventana -->
+        <field name = "name">Biblioteca de Comics</field>
+
+        <!-- Modelo al que se refiere la acción -->
+        <field name = "res_model">biblioteca.comic</field>
+
+        <!-- Tipo de vistas que se mostrarán: list (tabla), form (formulario) -->
+        <field name = "view_mode">list,form</field>
+
+    </record>
+
+    <!-- Menús del módulo -->
+    <menuitem name = "Mi biblioteca (Simple)" id = "biblioteca_base_menu" />
+    <menuitem name = "Comics" id = "biblioteca_comic_menu" parent = "biblioteca_base_menu" action = "biblioteca_comic_action"/>
+
+    <!-- Vista para crear y editar cómics -->
+    <record id = "biblioteca_comic_view_form" model = "ir.ui.view">
+
+        <!-- Nombre de la vista -->
+        <field name = "name">Formulario de Comic de la biblioteca</field>
+
+        <!-- Modelo al que pertenece esta vista -->
+        <field name = "model">biblioteca.comic</field>
+
+        <!-- Estructura XML de la vista -->
+        <field name = "arch" type = "xml">
+
+            <!-- Vista tipo formulario -->
+            <form>
+
+                <!-- Cabecera de la vista -->
+                <header>
+
+                    <!-- Botón para archivar comics -->
+                    <button type = "object" name = "archivar" string = "Archivar Comics"/>
+                    
+                </header>
+
+                <!-- Agrupación de campos -->
+                <group>
+
+                    <!-- Primer grupo de campos del cómic -->
+                    <group>
+
+                        <field name = "nombre"/>                                    <!-- Nombre del cómic -->
+                        <field name = "autor_ids" widget = "many2many_tags"/>       <!-- Autores del cómic -->
+                        <field name = "estado"/>                                    <!-- Estado del cómic -->
+                        <field name = "paginas"/>                                   <!-- Número de páginas del cómic -->
+                        <field name = "activo" readonly="1"/>                       <!-- Activo del cómic -->
+
+                    </group>
+
+                    <!-- Segundo grupo de campos del cómic -->
+                    <group>
+
+                        <field name = "precio"/>                                    <!-- Precio del cómic -->
+                        <field name = "fecha_publicacion"/>                         <!-- Fecha de publicación del cómic -->
+                        <field name = "portada" widget="image" class="oe_avatar"/>  <!-- Portada del cómic -->
+                        <field name = "valoracion_lector"/>                         <!-- Valoración del cómic -->
+
+                    </group>
+
+                </group>
+
+                <!-- Tercer grupo de campos del cómic -->
+                <group>
+
+                    <field name = "descripcion"/>   <!-- Descripción del cómic -->
+
+                </group>
+
+            </form>
+
+        </field>
+
+    </record>
+
+    <!-- Vista de lista de cómics -->
+    <record id = "biblioteca_comic_view_tree" model = "ir.ui.view">
+
+        <!-- Nombre de la vista -->
+        <field name = "name">Lista de Comics de la biblioteca</field>
+
+        <!-- Modelo al que pertenece esta vista -->
+        <field name = "model">biblioteca.comic</field>
+
+        <!-- Estructura XML de la vista -->
+        <field name = "arch" type = "xml">
+
+            <!-- Vista tipo lista -->
+            <list>
+
+                <!-- Campos visibles en la vista de lista -->
+                <field name = "nombre"/>                <!-- Nombre del cómic -->
+                <field name = "fecha_publicacion"/>     <!-- Fecha de publicación del cómic -->
+                <field name = "estado"/>                <!-- Estado del cómic -->
+
+            </list>
+
+        </field>
+
+    </record>
+
+    <!-- Vista de búsqueda de cómics -->
+    <record id = "biblioteca_comic_view_search" model = "ir.ui.view">
+
+        <!-- Nombre de la vista -->
+        <field name = "name">Búsqueda de Comics en la biblioteca</field>
+
+        <!-- Modelo al que pertenece esta vista -->
+        <field name = "model">biblioteca.comic</field>
+
+        <!-- Estructura XML de la vista -->
+        <field name = "arch" type = "xml">
+
+            <!-- Vista tipo búsqueda -->
+            <search>
+
+                <field name = "nombre"/>
+                <field name = "autor_ids"/>
+
+                <!-- Filtro predefinido para mostrar los cómics sin autor -->
+                <filter string = "Sin autor" name = "sin_autor" domain = "[('autor_ids','=',False)]"/>
+
+            </search>
+
+        </field>
+
+    </record>
+
+</odoo>

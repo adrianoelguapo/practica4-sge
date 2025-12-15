@@ -1,0 +1,88 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<odoo>
+
+    <!-- Acción principal del módulo que abre el modelo hospital.paciente y muestra sus vistas. -->
+    <record id = "action_paciente" model = "ir.actions.act_window">
+
+        <!-- Título visible de la ventana -->
+        <field name = "name">Pacientes</field>
+
+        <!-- Modelo al que se refiere la acción -->
+        <field name = "res_model">hospital.paciente</field>
+
+        <!-- Tipo de vistas que se mostrarán: list (tabla), form (formulario) -->
+        <field name = "view_mode">list,form</field>
+
+    </record>
+
+    <!-- Vista de lista de pacientes -->
+    <record id = "view_paciente_list" model = "ir.ui.view">
+
+        <!-- Nombre de la vista -->
+        <field name = "name">hospital.paciente.list</field>
+
+        <!-- Modelo al que pertenece esta vista -->
+        <field name = "model">hospital.paciente</field>
+
+        <!-- Estructura XML de la vista -->
+        <field name = "arch" type = "xml">
+
+            <!-- Vista tipo lista -->
+            <list string = "Pacientes">
+
+                <!-- Campos visibles en la vista de lista -->
+                <field name = "name" string = "Nombre"/>           <!-- Nombre del paciente -->
+                <field name = "symptoms" string = "Síntomas"/>     <!-- Síntomas del paciente -->
+
+            </list>
+
+        </field>
+
+    </record>
+
+    <!-- Vista de formulario para pacientes -->
+    <record id = "view_paciente_form" model = "ir.ui.view">
+
+        <!-- Nombre de la vista -->
+        <field name = "name">hospital.paciente.form</field>
+
+        <!-- Modelo al que pertenece esta vista -->
+        <field name = "model">hospital.paciente</field>
+
+        <!-- Estructura XML de la vista -->
+        <field name = "arch" type = "xml">
+
+            <!-- Vista tipo formulario -->
+            <form string = "Paciente">
+
+                <!-- Contenedor principal del formulario -->
+                <sheet>
+
+                    <!-- Título del formulario -->
+                    <div class = "oe_title">
+
+                        <h1>
+
+                            <field name = "name" placeholder = "Nombre completo del paciente"/> <!-- Nombre del paciente -->
+
+                        </h1>
+
+                    </div>
+
+                    <!-- Síntomas del paciente (textarea para texto largo) -->
+                    <group>
+
+                        
+                        <field name = "symptoms" widget = "textarea" string = "Síntomas" placeholder = "Escriba los síntomas del paciente aquí..."/> <!-- Síntomas del paciente -->
+
+                    </group>
+
+                </sheet>
+
+            </form>
+
+        </field>
+
+    </record>
+
+</odoo>

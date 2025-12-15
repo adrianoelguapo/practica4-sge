@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<odoo>
+
+    <!-- Menú principal que aparece en la barra de navegación -->
+    <menuitem id = "menu_hospital" name = "Hospital" sequence = "10"/>
+    
+    <!-- Submenús dentro del menú Hospital -->
+    
+    <!-- Menú para pacientes -->
+    <menuitem id = "menu_hospital_pacientes" name = "Pacientes" parent = "menu_hospital" action = "action_paciente" sequence = "10"/>
+    
+    <!-- Menú para médicos -->
+    <menuitem id = "menu_hospital_medicos" name = "Médicos" parent = "menu_hospital" action = "action_medico" sequence = "20"/>
+    
+    <!-- Menú para consultas -->
+    <menuitem id = "menu_hospital_consultas" name = "Consultas" parent = "menu_hospital" action = "action_consulta" sequence = "30"/>
+
+</odoo>

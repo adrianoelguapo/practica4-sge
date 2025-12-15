@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<odoo>
+    <!-- Menú principal -->
+    <menuitem id = "menu_ciclos_principal" name = "Ciclos Formativos" sequence = "10"/>
+    
+    <!-- Submenús -->
+
+    <!-- Menú de ciclos -->
+    <menuitem id = "menu_ciclos" name = "Ciclos" parent = "menu_ciclos_principal" action = "action_ciclo" sequence = "10"/>
+    
+    <!-- Menú de módulos -->
+    <menuitem id = "menu_modulos" name = "Módulos" parent = "menu_ciclos_principal" action = "action_modulo" sequence = "20"/>
+    
+    <!-- Menú de alumnos -->
+    <menuitem id = "menu_alumnos" name = "Alumnos" parent = "menu_ciclos_principal" action = "action_alumno" sequence = "30"/>
+    
+    <!-- Menú de profesores -->
+    <menuitem id = "menu_profesores" name = "Profesores" parent = "menu_ciclos_principal" action = "action_profesor" sequence = "40"/>
+
+</odoo>

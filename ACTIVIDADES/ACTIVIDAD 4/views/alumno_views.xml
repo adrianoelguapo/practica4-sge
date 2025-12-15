@@ -1,0 +1,93 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<odoo>
+
+    <!-- Acción principal del módulo que abre el modelo ciclos.alumno y muestra sus vistas. -->
+    <record id = "action_alumno" model = "ir.actions.act_window">
+
+        <!-- Título visible de la ventana -->
+        <field name = "name">Alumnos</field>
+
+        <!-- Modelo al que se refiere la acción -->
+        <field name = "res_model">ciclos.alumno</field>
+
+        <!-- Tipo de vistas que se mostrarán: list (tabla), form (formulario) -->
+        <field name = "view_mode">list,form</field>
+
+    </record>
+
+    <!-- Vista de lista de alumnos -->
+    <record id = "view_alumno_list" model = "ir.ui.view">
+
+        <!-- Nombre de la vista -->
+        <field name = "name">ciclos.alumno.list</field>
+
+        <!-- Modelo al que pertenece esta vista -->
+        <field name = "model">ciclos.alumno</field>
+
+        <!-- Estructura XML de la vista -->
+        <field name = "arch" type = "xml">
+
+            <!-- Vista tipo lista -->
+            <list string = "Alumnos">
+
+                <!-- Campos visibles en la vista de lista -->
+                <field name = "name" string = "Nombre Completo del Alumno"/>    <!-- Nombre completo del alumno -->
+                <field name = "dni" string = "DNI del Alumno"/>                 <!-- DNI del alumno -->
+
+            </list>
+
+        </field>
+
+    </record>
+
+    <!-- Vista de formulario para crear o editar alumnos -->
+    <record id = "view_alumno_form" model = "ir.ui.view">
+
+        <!-- Nombre de la vista -->
+        <field name = "name">ciclos.alumno.form</field>
+
+        <!-- Modelo al que pertenece esta vista -->
+        <field name = "model">ciclos.alumno</field>
+
+        <!-- Estructura XML de la vista -->
+        <field name = "arch" type = "xml">
+
+            <!-- Vista tipo formulario -->
+            <form string = "Alumno">
+
+                <!-- Contenedor principal del formulario -->
+                <sheet>
+
+                    <!-- Agrupación de campos -->
+                    <group>
+
+                        <field name = "name" string = "Nombre Completo del Alumno"/>    <!-- Nombre completo del alumno -->
+                        <field name = "dni" string = "DNI del Alumno"/>                 <!-- DNI del alumno -->
+
+                    </group>
+
+                    <!-- Relación con módulos -->
+                    <field name = "modulo_ids">
+
+                        <!-- Vista tipo lista -->
+                        <list string = "Módulos">
+
+                            <!-- Campos visibles en la vista de lista -->
+                            <field name = "name" string = "Nombre del Módulo"/>     <!-- Nombre del módulo -->
+                            <field name = "codigo" string = "Código del Módulo"/>   <!-- Código del módulo -->
+                            <field name = "ciclo_id" string = "Ciclo Formativo"/>   <!-- Ciclo Formativo del módulo -->
+                            <field name = "profesor_id" string = "Profesor"/>       <!-- Profesor del módulo -->
+
+                        </list>
+
+                    </field>
+
+                </sheet>
+
+            </form>
+
+        </field>
+
+    </record>
+
+</odoo>

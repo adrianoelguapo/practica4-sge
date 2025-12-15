@@ -1,0 +1,92 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<odoo>
+
+    <!-- Acción principal del módulo que abre el modelo ciclos.ciclo y muestra sus vistas. -->
+    <record id = "action_ciclo" model = "ir.actions.act_window">
+
+        <!-- Título visible de la ventana -->
+        <field name = "name">Ciclos</field>
+
+        <!-- Modelo al que se refiere la acción -->
+        <field name = "res_model">ciclos.ciclo</field>
+
+        <!-- Tipo de vistas que se mostrarán: list (tabla), form (formulario) -->
+        <field name = "view_mode">list,form</field>
+
+    </record>
+
+    <!-- Vista de lista de ciclos -->
+    <record id = "view_ciclo_list" model = "ir.ui.view">
+
+        <!-- Nombre de la vista -->
+        <field name = "name">ciclos.ciclo.list</field>
+
+        <!-- Modelo al que se refiere la vista -->
+        <field name = "model">ciclos.ciclo</field>
+
+        <!-- Estructura XML de la vista -->
+        <field name = "arch" type = "xml">
+
+            <!-- Vista tipo lista -->
+            <list>
+
+                <!-- Campos que se mostrarán en la lista -->
+                <field name = "codigo" string = "Código del Ciclo"/>    <!-- Código del Ciclo -->
+                <field name = "name" string = "Nombre del Ciclo"/>      <!-- Nombre del Ciclo -->
+
+            </list>
+
+        </field>
+
+    </record>
+
+    <!-- Vista de formulario para crear o editar ciclos -->
+    <record id = "view_ciclo_form" model = "ir.ui.view">
+
+        <!-- Nombre de la vista -->
+        <field name = "name">ciclos.ciclo.form</field>
+
+        <!-- Modelo al que se refiere la vista -->
+        <field name = "model">ciclos.ciclo</field>
+
+        <!-- Estructura XML de la vista -->
+        <field name = "arch" type = "xml">
+
+            <!-- Vista tipo formulario -->
+            <form>
+
+                <!-- Contenedor principal del formulario -->
+                <sheet>
+
+                    <!-- Agrupación de campos -->
+                    <group>
+
+                        <field name = "name" string = "Nombre del Ciclo"/>      <!-- Nombre del Ciclo -->
+                        <field name = "codigo" string = "Código del Ciclo"/>    <!-- Código del Ciclo -->
+
+                    </group>
+
+                    <!-- Relación con módulos -->
+                    <field name = "modulo_ids">
+
+                        <!-- Vista tipo lista -->
+                        <list>
+
+                            <field name = "name" string = "Nombre del Módulo"/>                 <!-- Nombre del Módulo -->
+                            <field name = "codigo" string = "Código del Módulo"/>               <!-- Código del Módulo -->
+                            <field name = "profesor_id" string = "Profesor del Módulo"/>        <!-- Profesor del Módulo -->
+                            <field name = "alumno_ids" string = "Alumnos del Módulo"/>          <!-- Alumnos del Módulo -->
+                            
+                        </list>
+
+                    </field>
+
+                </sheet>
+
+            </form>
+
+        </field>
+        
+    </record>
+
+</odoo>
