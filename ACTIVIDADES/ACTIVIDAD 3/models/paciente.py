@@ -11,11 +11,11 @@ class Paciente(models.Model):
     # Define la descripción del modelo.
     _description = 'Paciente del Hospital'
     
-    # Campo obligatorio para nombre completo
+    # Campo obligatorio para nombre completo.
     name = fields.Char(string = 'Nombre y Apellidos', required = True, help = 'Nombre completo del paciente')
     
     # Síntomas del paciente
     symptoms = fields.Text(string = 'Síntomas', help = 'Descripción de los síntomas del paciente')
     
-    # Relación con consultas: un paciente puede tener muchas consultas
-    consulta_ids = fields.One2many(comodel_name = 'hospital.consulta', inverse_name = 'paciente_id', string = 'Consultas', help = 'Lista de consultas de este paciente')
+    # Relación con consultas: un paciente puede tener muchas consultas.
+    consulta_ids = fields.One2many(comodel_name = 'hospital.consulta', inverse_name = 'paciente_id', string = 'Consultas', help = 'Lista de consultas')

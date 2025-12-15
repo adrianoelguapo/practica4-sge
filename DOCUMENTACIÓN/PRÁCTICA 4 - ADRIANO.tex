@@ -69,10 +69,14 @@ Para las actividades 1 y 2, previamente se clonará el repositorio que contiene 
 \justify
 \section{ACTIVIDAD 1}
 
+\subsection{Introducción}
+
 \justify
 El objetivo de esta actividad es modificar el ejemplo más básico de la \textbf{Lista de Tareas} \texttt{(Directorio EJ02-ListaTareas del repositorio clonado previamente)} para que las tareas se muestren en formato \textbf{Kanban}. También se debe crear una nueva vista para visualizar las tareas en formato \textbf{Calendario} según la fecha definida.
 
 \newpage
+
+\subsection{Modelos}
 
 \justify
 Partiendo del directorio mencionado previamente, el primer paso será modificar el archivo \texttt{models/models.py} para añadir el nuevo campo \textbf{Fecha} al modelo de la lista de tareas.
@@ -82,8 +86,8 @@ Para definir el modelo se crea una nueva clase de Python que hereda de la clase 
 
 \begin{itemize}
 
-    \item  \textbf{\_name}: Define como como Odoo guardará el módulo en la base de datos.
-    \item  \textbf{\_description}: Descripción del módulo.
+    \item  \textbf{\_name}: Define como como Odoo guardará el modelo en la base de datos.
+    \item  \textbf{\_description}: Descripción del modelo.
     \item  \textbf{\_rec\_name}: Campo a mostrar por defecto en las vistas y menús.
     \item  \textbf{tarea}: Nombre de la tarea \texttt{(String)}.
     \item  \textbf{prioridad}: Nivel de prioridad de la tarea \texttt{(Integer)}.
@@ -101,6 +105,8 @@ Para definir el modelo se crea una nueva clase de Python que hereda de la clase 
 \end{figure}
 
 \newpage
+
+\subsection{Vistas}
 
 \justify
 Una vez modificado el modelo, hay que actualizar las vistas del módulo para que reflejen los cambios realizado en el modelo y también para añadir los nuevos tipos de vistas requeridos para la realización de la actividad. Para ello se modificará el archivo \texttt{views/views.xml}.
@@ -147,7 +153,7 @@ Para ello, se definirán los siguientes \texttt{menuitem}:
 \end{figure}
 
 \justify
-Una vez definidas las acciones y los menús, se procederá a crear y explicar todas las vistas del módulo. La primera de ellas será la vista de tipo \textbf{list} que mostrará la lista de tareas en una tabla y para ello se utiliza la etiqueta \textbf{record} con los atributos \textbf{id} (identificador único de la vista), \textbf{model} (modelo de la vista).
+Una vez definidas las acciones y los menús, se procederá a crear y explicar todas las vistas del modelo. La primera de ellas será la vista de tipo \textbf{list} que mostrará la lista de tareas en una tabla y para ello se utiliza la etiqueta \textbf{record} con los atributos \textbf{id} (identificador único de la vista), \textbf{model} (modelo de la vista).
 
 \justify
 Dentro de la etiqueta record se definen los siguientes campos:
@@ -176,7 +182,7 @@ Dentro del campo con \texttt{name:} \textbf{arch} se define el tipo de vista y s
 \end{itemize}
 
 \justify
-Así quedaría la vista de tipo \textbf{list}:
+Así quedaría la vista de tipo \textbf{list} \texttt{(views/views.xml)}:
 
 \begin{figure}[h]
 
@@ -220,7 +226,7 @@ Dentro de la etiqueta \textbf{sheet}, están definidos dos grupos de campos y en
 \newpage
 
 \justify
-Así quedaría la vista de tipo \textbf{form}:
+Así quedaría la vista de tipo \textbf{form} \texttt{(views/views.xml)}:
 
 \begin{figure}[h]
 
@@ -270,7 +276,7 @@ En la vista de calendario se mostrarán los siguientes datos de la tarea:
 \newpage
 
 \justify
-Así quedaría la vista de tipo \textbf{calendar}:
+Así quedaría la vista de tipo \textbf{calendar} \texttt{(views/views.xml)}:
 
 \begin{figure}[h]
 
@@ -356,6 +362,8 @@ En esta vista el único campo que interesa es el nombre de la tarea ya que los d
 
 \newpage
 
+\subsection{Funcionamiento}
+
 \justify
 Ya terminada la explicación del modelo y las vistas del módulo, se pondrá a prueba su funcionamiento y para ello el primer paso es pasar el directorio del módulo del equipo local al contenedor de Odoo, concretamente a la carpeta mapeada para almacenar los módulos extra añadidos por el usuario y para ello se utilizará el siguiente comando: \newline
 
@@ -425,8 +433,16 @@ Y por último, así se mostrarían las tareas en la vista de tipo \textbf{calend
 
 \section{ACTIVIDAD 2}
 
+\subsection{Introducción}
+
 \justify
 El objetivo de esta actividad es amplicar el módulo de ejemplo de la \textbf{Biblioteca} \texttt{Directorio EJ03-ComicsSimple del repositorio clonado previamente} para que incluya la posibilidad de incluir \textbf{Socios}. También se debe implementar un sistema de gestión de \textbf{Préstamos de Cómics} para que los socios de la biblioteca puedan llevarse cómics prestados.
+
+\subsection{Modelos}
+
+\subsection{Vistas}
+
+\subsection{Funcionamiento}
 
 \newpage
 
@@ -470,16 +486,390 @@ Una vez creada la base de módulo, se debe pasar el directorio del módulo del c
 
 \subsubsection{Modelo Paciente}
 
+\justify
+El primer paso para crear el modelo es definir el nombre de la clase que definirá al modelo y que heredará de la clase \textbf{models.Model}. Una vez definida la clase, se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{\_name}: Define como Odoo guardará el modelo en la base de datos.
+    \item \textbf{\_description}: Descripción del modelo.
+    \item \textbf{\_rec\_name}: Campo a mostrar por defecto en las vistas y menús.
+    \item \textbf{symptoms}: Atributo que define los síntomas del paciente \texttt{(String)}.
+    \item \textbf{consulta\_ids}: Atributo que define las consultas del paciente \texttt{(Many2one)}.
+
+\end{itemize}
+
+\newpage
 
 \justify
+Así quedaría el modelo \textbf{Paciente} \texttt{(models/paciente.py)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=16cm]{images/21.png}
+
+\end{figure}
+
+\subsubsection{Modelo Médico}
+
+\justify
+El primer paso para crear el modelo es definir el nombre de la clase que definirá al modelo y que heredará de la clase \textbf{models.Model}. Una vez definida la clase, se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{\_name}: Define como Odoo guardará el modelo en la base de datos.
+    \item \textbf{\_description}: Descripción del modelo.
+    \item \textbf{name}: Campo a mostrar por defecto en las vistas y menús.
+    \item \textbf{numero\_colegiado}: Atributo que define el número de colegiado del médico \texttt{(String)}.
+    \item \textbf{consulta\_ids}: Atributo que define las consultas del médico \texttt{(Many2one)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría el modelo \textbf{Médico} \texttt{(models/medico.py)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=16cm]{images/22.png}
+
+\end{figure}
+
+\subsubsection{Modelo Consulta}
+
+\justify
+El primer paso para crear el modelo es definir el nombre de la clase que definirá al modelo y que heredará de la clase \textbf{models.Model}. Una vez definida la clase, se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{\_name}: Define como Odoo guardará el modelo en la base de datos.
+    \item \textbf{\_description}: Descripción del modelo.
+    \item \textbf{paciente\_id}: Atributo que define el paciente de la consulta \texttt{(Many2one)}.
+    \item \textbf{medico\_id}: Atributo que define el médico de la consulta \texttt{(Many2one)}.
+    \item \textbf{diagnostico}: Atributo que define el diagnostico de la consulta \texttt{(Text)}.
+    \item \textbf{fecha\_hora}: Atributo que define la fecha y hora de la consulta \texttt{(Datetime)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría el modelo \textbf{Consulta} \texttt{(models/consulta.py)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=16cm]{images/23.png}
+
+\end{figure}
+
+\justify
+\subsection{Vistas}
+
+\subsubsection{Vistas de Paciente}
+
+\justify
+El primer paso sera definir la acción principal que será abrir el modelo \texttt{hospital.paciente} y muestra sus vistas. Se deben de definir los siguientes campos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{res\_model}: Modelo al que se refiere la acción.
+    \item \textbf{view\_mode}: Tipo de vistas que se mostrarán: list \texttt{(tabla)}, form \texttt{(formulario)}.
+
+\end{itemize}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=16cm]{images/24.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+Una vez definida la acción principal, se procederá a crear y explicar todas las vistas del modelo. La primera de ellas será la vista de tipo \textbf{list}, que mostrará los pacientes en una tabla. Para ello se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{list} y también se definen los campos que se mostrarán en la vista:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre del paciente \texttt{(String)}.
+    \item \textbf{symptoms}: Síntomas del paciente \texttt{(Text)}.
+
+\end{itemize}
+
+\justify
+Así quedaría la vista de tipo \textbf{list} \texttt{(views/paciente\_list.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=16cm]{images/25.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+La última vista a explicar de este modelo será la vista de tipo \textbf{form}, utilizada para crear y editar pacientes. Se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{form}. Se utliza una etiqueta \textbf{sheet} como contenedor principal del formulario y también se definen los campos que se mostrarán en la vista para poder ser rellenados:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre del paciente \texttt{(String)}.
+    \item \textbf{symptoms}: Síntomas del paciente \texttt{(Text)}.
+
+\end{itemize}
+
+\justify
+Así quedaría la vista de tipo \textbf{form} \texttt{(views/paciente\_form.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=16cm]{images/26.png}
+
+\end{figure}
+
+\subsubsection{Vistas de Médico}
+
+\justify
+El primer paso sera definir la acción principal que será abrir el modelo \texttt{hospital.medico} y muestra sus vistas. Se deben de definir los siguientes campos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{res\_model}: Modelo al que se refiere la acción.
+    \item \textbf{view\_mode}: Tipo de vistas que se mostrarán: list \texttt{(tabla)}, form \texttt{(formulario)}.
+
+\end{itemize}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=13cm]{images/27.png}
+
+\end{figure}
+
+\justify
+Una vez definida la acción principal, se procederá a crear y explicar todas las vistas del modelo. La primera de ellas será la vista de tipo \textbf{list}, que mostrará los médicos en una tabla. Para ello se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{list} y también se definen los campos que se mostrarán en la vista:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre del médico \texttt{(String)}.
+    \item \textbf{numero\_colegiado}: Número de colegiado \texttt{(String)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría la vista de tipo \textbf{list} \texttt{(views/medico\_views.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=16cm]{images/28.png}
+
+\end{figure}
+
+\justify
+La última vista a explicar de este modelo será la vista de tipo \textbf{form}, utilizada para crear y editar médicos. Se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{form}. Se utliza una etiqueta \textbf{sheet} como contenedor principal del formulario y también se definen los campos que se mostrarán en la vista para poder ser rellenados:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre del médico \texttt{(String)}.
+    \item \textbf{numero\_colegiado}: Número de colegiado \texttt{(String)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría la vista de tipo \textbf{form} \texttt{(views/medico\_views.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=16cm]{images/29.png}
+
+\end{figure}
+
+\newpage
+
+\subsubsection{Vistas de Consulta}
+
+\justify
+El primer paso sera definir la acción principal que será abrir el modelo \texttt{hospital.consulta} y muestra sus vistas. Se deben de definir los siguientes campos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{res\_model}: Modelo al que se refiere la acción.
+    \item \textbf{view\_mode}: Tipo de vistas que se mostrarán: list \texttt{(tabla)}, form \texttt{(formulario)}.
+
+\end{itemize}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=13cm]{images/30.png}
+
+\end{figure}
+
+\justify
+Una vez definida la acción principal, se procederá a crear y explicar todas las vistas del modelo. La primera de ellas será la vista de tipo \textbf{list}, que mostrará las consultas en una tabla. Para ello se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{list} y también se definen los campos que se mostrarán en la vista:
+
+\begin{itemize}
+
+    \item \textbf{paciente\_id}: Paciente a atender \texttt{(String)}.
+    \item \textbf{medico\_id}: Médico que atiende al paciente \texttt{(String)}.
+    \item \textbf{fecha\_hora}: Fecha y hora de la consulta \texttt{(Datetime)}.
+    \item \textbf{diagnostico}: Diagnóstico \texttt{(Text)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría la vista de tipo \textbf{list} \texttt{(views/consulta\_views.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=16cm]{images/31.png}
+
+\end{figure}
+
+\subsubsection{Vistas de Menús}
+
+\justify
+A continuación se definirán los menús del módulo que aparecerán en la parte superior de la interfaz de Odoo y para ello se les debe asignar un atributo \textbf{id} que será el identificador único de cada menú, un atributo \textbf{name} que será el nombre visble del menú y un atributo \textbf{parent} que será el menú padre del menú. 
+
+\newpage
+
+\justify
+Para ello, se definirán los siguientes \texttt{menuitem}:
+
+\begin{itemize}
+
+    \item \textbf{menu\_hospital}: Menú principal que aparece en la barra de navegación.
+    \item \textbf{menu\_hospital\_pacientes}: Submenú del modelo paciente que aparece en el menú principal.
+    \item \textbf{menu\_hospital\_medicos}: Submenú del modelo médico que aparece en el menú principal.
+    \item \textbf{menu\_hospital\_consultas}: Submenú del modelo consulta que aparece en el menú principal.
+
+\end{itemize}
+
+\justify
+Así quedarían los menús \texttt{(views/menu\_views.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/32.png}
+
+\end{figure}
+
+\justify
+\subsection{Otros archivos}
+
+\justify
+Se debe modificar el archivo \texttt{models/\_\_init\_\_.py} para importar los modelos que se han creado.
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=7cm]{images/33.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+Se debe modificar el archivo \texttt{\_\_manifest\_\_.py} para importar las vistas que se han creado.
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/34.png}
+
+\end{figure}
+
+\subsection{Funcionamiento}
+
+
+
+
+
 
 \newpage
 
 \justify
 \section{ACTIVIDAD 4}
 
+\subsection{Introducción}
+
 \justify
 El objetivo de esta actividad es desarrollar un módulo para simular la gestión de \textbf{Ciclos Formativos} en un instituto en el que se tendrán en cuenta los mismos Ciclos Formativos, los \textbf{Módulos} del ciclo, los \textbf{Profesores} que imparten dichos ciclos y los \textbf{Alumnos} matriculados.
+
+\subsection{Base del Módulo}
 
 \justify
 Para ello el primer paso es crear la base del módulo utilizando \textbf{Odoo Scaffold} y para ello se utilizará el siguiente comando: \newline
@@ -506,5 +896,579 @@ Una vez creada la base de módulo, se debe pasar el directorio del módulo del c
     \includegraphics[width=15cm]{images/20.png}
 
 \end{figure}
+
+\newpage
+
+\justify
+\subsection{Modelos}
+
+\subsubsection{Modelo Alumno}
+
+\justify
+El primer paso para crear el modelo es definir el nombre de la clase que definirá al modelo y que heredará de la clase \textbf{models.Model}. Una vez definida la clase, se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{\_name}: Define como Odoo guardará el modelo en la base de datos.
+    \item \textbf{\_description}: Descripción del modelo.
+    \item \textbf{name}: Atributo que define el nombre completo del alumno \texttt{(String)}.
+    \item \textbf{dni}: Atributo que define el DNI del alumno \texttt{(String)}.
+    \item \textbf{modulo\_ids}: Atributo que define los módulos que cursa el alumno \texttt{(Many2many)}.
+
+\end{itemize}
+
+\justify
+Así quedaría el modelo \textbf{Alumno} \texttt{(models/alumno.py)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=12cm]{images/35.png}
+
+\end{figure}
+
+\newpage
+
+\subsubsection{Modelo Profesor}
+
+\justify
+El primer paso para crear el modelo es definir el nombre de la clase que definirá al modelo y que heredará de la clase \textbf{models.Model}. Una vez definida la clase, se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{\_name}: Define como Odoo guardará el modelo en la base de datos.
+    \item \textbf{\_description}: Descripción del modelo.
+    \item \textbf{name}: Atributo que define el nombre completo del profesor \texttt{(String)}.
+    \item \textbf{dni}: Atributo que define el DNI del profesor \texttt{(String)}.
+    \item \textbf{modulo\_ids}: Atributo que define los módulos que imparte el profesor \texttt{(One2many)}.
+
+\end{itemize}
+
+\justify
+Así quedaría el modelo \textbf{Profesor} \texttt{(models/profesor.py)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=12cm]{images/36.png}
+
+\end{figure}
+
+\newpage
+
+\subsubsection{Modelo Ciclo Formativo}
+
+\justify
+El primer paso para crear el modelo es definir el nombre de la clase que definirá al modelo y que heredará de la clase \textbf{models.Model}. Una vez definida la clase, se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{\_name}: Define como Odoo guardará el modelo en la base de datos.
+    \item \textbf{\_description}: Descripción del modelo.
+    \item \textbf{name}: Atributo que define el nombre completo del ciclo formativo \texttt{(String)}.
+    \item \textbf{codigo}: Atributo que define el código del ciclo formativo \texttt{(String)}.
+    \item \textbf{modulo\_ids}: Atributo que define los módulos que forman el ciclo formativo \texttt{(One2many)}.
+
+\end{itemize}
+
+\justify
+Así quedaría el modelo \textbf{Ciclo Formativo} \texttt{(models/ciclo\_formativo.py)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=12cm]{images/37.png}
+
+\end{figure}
+
+\newpage
+
+\subsubsection{Modelo Módulo}
+
+\justify
+El primer paso para crear el modelo es definir el nombre de la clase que definirá al modelo y que heredará de la clase \textbf{models.Model}. Una vez definida la clase, se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{\_name}: Define como Odoo guardará el modelo en la base de datos.
+    \item \textbf{\_description}: Descripción del modelo.
+    \item \textbf{name}: Atributo que define el nombre completo del módulo \texttt{(String)}.
+    \item \textbf{codigo}: Atributo que define el código del módulo \texttt{(String)}.
+    \item \textbf{ciclo\_ids}: Atributo que define los módulos que imparte el profesor \texttt{(Many2One)}.
+    \item \textbf{profesor\_ids}: Atributo que define el profesor que imparte el módulo \texttt{(Many2One)}.
+    \item \textbf{alumno\_ids}: Atributo que define los alumnos que cursan el módulo \texttt{(Many2many)}.
+
+\end{itemize}
+
+\justify
+Así quedaría el modelo \textbf{Módulo} \texttt{(models/modulo.py)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=12cm]{images/38.png}
+
+\end{figure}
+
+\subsection{Vistas}
+
+\subsubsection{Vistas de Alumno}
+
+\justify
+El primer paso sera definir la acción principal que será abrir el modelo \texttt{ciclos.alumno} y muestra sus vistas. Se deben de definir los siguientes campos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{res\_model}: Modelo al que se refiere la acción.
+    \item \textbf{view\_mode}: Tipo de vistas que se mostrarán: list \texttt{(tabla)}, form \texttt{(formulario)}.
+
+\end{itemize}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=13cm]{images/39.png}
+
+\end{figure}
+
+\justify
+Una vez definida la acción principal, se procederá a crear y explicar todas las vistas del modelo. La primera de ellas será la vista de tipo \textbf{list}, que mostrará los alumnos en una tabla. Para ello se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{list} y también se definen los campos que se mostrarán en la vista:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre completo del alumno \texttt{(String)}.
+    \item \textbf{dni}: DNI del alumno \texttt{(String)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría la vista \textbf{list} \texttt{(views/alumno\_views.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=13cm]{images/43.png}
+
+\end{figure}
+
+\justify
+La última vista a explicar de este modelo será la vista de tipo \textbf{form}, utilizada para crear y editar alumnos. Se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{form}. Se utliza una etiqueta \textbf{sheet} como contenedor principal del formulario y también se definen los campos que se mostrarán en la vista para poder ser rellenados:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre completo del alumno \texttt{(String)}.
+    \item \textbf{dni}: DNI del alumno \texttt{(String)}.
+    \item \textbf{modulo\_ids}: Relación con módulos \texttt{(One2many)}.
+
+\end{itemize}
+
+\justify
+El campo \texttt{modulo\_ids} es una vista de lista para mostrar los datos de los módulos que cursa el alumno. Se mostrarán los siguientes datos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre completo del módulo \texttt{(String)}.
+    \item \textbf{codigo}: Código del módulo \texttt{(String)}.
+    \item \textbf{ciclo\_ids}: Ciclo Formativo del módulo \texttt{(One2Many)}.
+    \item \textbf{profesor\_ids}: Profesor del módulo \texttt{(One2Many)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría la vista \textbf{form} \texttt{(views/alumno\_views.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=13cm]{images/48.png}
+
+\end{figure}
+
+\newpage
+
+\subsubsection{Vistas de Profesor}
+
+\justify
+El primer paso sera definir la acción principal que será abrir el modelo \texttt{ciclos.profesor} y muestra sus vistas. Se deben de definir los siguientes campos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{res\_model}: Modelo al que se refiere la acción.
+    \item \textbf{view\_mode}: Tipo de vistas que se mostrarán: list \texttt{(tabla)}, form \texttt{(formulario)}.
+
+\end{itemize}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=13cm]{images/40.png}
+
+\end{figure}
+
+\justify
+Una vez definida la acción principal, se procederá a crear y explicar todas las vistas del modelo. La primera de ellas será la vista de tipo \textbf{list}, que mostrará los profesores en una tabla. Para ello se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{list} y también se definen los campos que se mostrarán en la vista:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre completo del profesor \texttt{(String)}.
+    \item \textbf{dni}: DNI del profesor \texttt{(String)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría la vista \textbf{list} \texttt{(views/profesor\_views.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=13cm]{images/44.png}
+
+\end{figure}
+
+\justify
+La última vista a explicar de este modelo será la vista de tipo \textbf{form}, utilizada para crear y editar profesores. Se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{form}. Se utliza una etiqueta \textbf{sheet} como contenedor principal del formulario y también se definen los campos que se mostrarán en la vista para poder ser rellenados:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre completo del profesor \texttt{(String)}.
+    \item \textbf{dni}: DNI del profesor \texttt{(String)}.
+    \item \textbf{modulo\_ids}: Relación con módulos \texttt{(One2many)}.
+
+\end{itemize}
+
+\justify
+El campo \texttt{modulo\_ids} es una vista de lista para mostrar los datos de los módulos que imparte el profesor. Se mostrarán los siguientes datos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre completo del módulo \texttt{(String)}.
+    \item \textbf{codigo}: Código del módulo \texttt{(String)}.
+    \item \textbf{ciclo\_ids}: Ciclo Formativo del módulo \texttt{(One2Many)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría la vista \textbf{form} \texttt{(views/profesor\_views.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=13cm]{images/49.png}
+
+\end{figure}
+
+\newpage
+
+\subsubsection{Vistas de Ciclo Formativo}
+
+\justify
+El primer paso sera definir la acción principal que será abrir el modelo \texttt{ciclos.ciclo} y muestra sus vistas. Se deben de definir los siguientes campos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{res\_model}: Modelo al que se refiere la acción.
+    \item \textbf{view\_mode}: Tipo de vistas que se mostrarán: list \texttt{(tabla)}, form \texttt{(formulario)}.
+
+\end{itemize}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=13cm]{images/41.png}
+
+\end{figure}
+
+\justify
+Una vez definida la acción principal, se procederá a crear y explicar todas las vistas del modelo. La primera de ellas será la vista de tipo \textbf{list}, que mostrará las consultas en una tabla. Para ello se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{list} y también se definen los campos que se mostrarán en la vista:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre completo del ciclo formativo \texttt{(String)}.
+    \item \textbf{codigo}: Código identificador del ciclo formativo \texttt{(String)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría la vista \textbf{list} \texttt{(views/ciclo\_formativo\_views.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=13cm]{images/45.png}
+
+\end{figure}
+
+\justify
+La última vista a explicar de este modelo será la vista de tipo \textbf{form}, utilizada para crear y editar los ciclos formativos. Se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{form}. Se utliza una etiqueta \textbf{sheet} como contenedor principal del formulario y también se definen los campos que se mostrarán en la vista para poder ser rellenados:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre completo del ciclo \texttt{(String)}.
+    \item \textbf{codigo}: Código identificador del ciclo \texttt{(String)}.
+    \item \textbf{modulo\_ids}: Relación con módulos \texttt{(One2many)}.
+
+\end{itemize}
+
+\justify
+El campo \texttt{modulo\_ids} es una vista de lista para mostrar los datos de los módulos que pertenecen al ciclo. Se mostrarán los siguientes datos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre completo del módulo \texttt{(String)}.
+    \item \textbf{codigo}: Código del módulo \texttt{(String)}.
+    \item \textbf{profesor\_id}: Profesor del módulo \texttt{(One2Many)}.
+    \item \textbf{alumno\_ids}: Alumnos del módulo \texttt{(Many2Many)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría la vista \textbf{form} \texttt{(views/ciclo\_formativo\_views.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=13cm]{images/50.png}
+
+\end{figure}
+
+\newpage
+
+\subsubsection{Vistas de Módulo}
+
+\justify
+El primer paso sera definir la acción principal que será abrir el modelo \texttt{ciclos.modulo} y muestra sus vistas. Se deben de definir los siguientes campos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{res\_model}: Modelo al que se refiere la acción.
+    \item \textbf{view\_mode}: Tipo de vistas que se mostrarán: list \texttt{(tabla)}, form \texttt{(formulario)}.
+
+\end{itemize}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=13cm]{images/42.png}
+
+\end{figure}
+
+\justify
+Una vez definida la acción principal, se procederá a crear y explicar todas las vistas del modelo. La primera de ellas será la vista de tipo \textbf{list}, que mostrará las consultas en una tabla. Para ello se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{list} y también se definen los campos que se mostrarán en la vista:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre completo del módulo \texttt{(String)}.
+    \item \textbf{codigo}: Código identificador del módulo \texttt{(String)}.
+    \item \textbf{ciclo\_id}: Ciclo formativo al que pertenece el módulo \texttt{(Many2one)}.
+    \item \textbf{profesor\_id}: Profesor que imparte el módulo \texttt{(Many2one)}.
+    \item \textbf{alumno\_ids}: Alumnos que cursan el módulo \texttt{(Many2many)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría la vista \textbf{list} \texttt{(views/modulo\_views.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=13cm]{images/46.png}
+
+\end{figure}
+
+\justify
+La última vista a explicar de este modelo será la vista de tipo \textbf{form}, utilizada para crear y editar módulos pertenecientes a un ciclo formativo. Se definen los siguientes elementos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Título visible de la ventana.
+    \item \textbf{model}: Modelo al que pertenece esta vista.
+    \item \textbf{arch}: Estructura XML de la vista.
+
+\end{itemize}
+
+\justify
+Dentro del campo con \texttt{name: arch} se define el tipo de vista que en este caso será de tipo \textbf{form}. Se utliza una etiqueta \textbf{sheet} como contenedor principal del formulario y también se definen los campos que se mostrarán en la vista para poder ser rellenados:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre completo del módulo \texttt{(String)}.
+    \item \textbf{codigo}: Código identificador del módulo \texttt{(String)}.
+    \item \textbf{ciclo\_id}: Ciclo formativo al que pertenece el módulo \texttt{(Many2one)}.
+    \item \textbf{profesor\_id}: Profesor que imparte el módulo \texttt{(Many2one)}.
+    \item \textbf{alumno\_ids}: Alumnos que cursan el módulo \texttt{(Many2many)}.
+
+\end{itemize}
+
+\justify
+El campo \texttt{alumno\_ids} es una vista de lista para mostrar los datos de los alumnos que cursan el módulo. Se mostrarán los siguientes datos:
+
+\begin{itemize}
+
+    \item \textbf{name}: Nombre completo del alumno \texttt{(String)}.
+    \item \textbf{dni}: DNI del alumno \texttt{(String)}.
+
+\end{itemize}
+
+\newpage
+
+\justify
+Así quedaría la vista \textbf{form} \texttt{(views/modulo\_views.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=13cm]{images/50.png}
+
+\end{figure}
+
+\newpage
+
+\subsubsection{Vistas de Menús}
+
+\justify
+A continuación se definirán los menús del módulo que aparecerán en la parte superior de la interfaz de Odoo y para ello se les debe asignar un atributo \textbf{id} que será el identificador único de cada menú, un atributo \textbf{name} que será el nombre visble del menú y un atributo \textbf{parent} que será el menú padre del menú. 
+
+\justify
+Para ello, se definirán los siguientes \texttt{menuitem}:
+
+\begin{itemize}
+
+    \item \textbf{menu\_ciclos\_principal}: Menú principal que aparece en la barra de navegación.
+    \item \textbf{menu\_alumnos}: Submenú del modelo Alumno que aparece en el menú principal.
+    \item \textbf{menu\_profesores}: Submenú del modelo médico que aparece en el menú principal.
+    \item \textbf{menu\_ciclos}: Submenú del modelo consulta que aparece en el menú principal.
+
+\end{itemize}
+
+\justify
+Así quedarían los menús \texttt{(views/menu\_views.xml)}:
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=15cm]{images/47.png}
+
+\end{figure}
+
+\newpage
+
+\subsection{Otros archivos}
+
+\justify
+Se debe modificar el archivo \texttt{models/\_\_init\_\_.py} para importar los modelos que se han creado.
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=7cm]{images/51.png}
+
+\end{figure}
+
+\justify
+Se debe modificar el archivo \texttt{\_\_manifest\_\_.py} para importar las vistas que se han creado.
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=10cm]{images/52.png}
+
+\end{figure}
+
+\subsection{Funcionamiento}
 
 \end{document}

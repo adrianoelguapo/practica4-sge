@@ -70,7 +70,7 @@
                     <field name = "modulo_ids">
 
                         <!-- Vista tipo lista -->
-                        <list>
+                        <list string = "Módulos">
 
                             <field name = "name" string = "Nombre del Módulo"/>                 <!-- Nombre del Módulo -->
                             <field name = "codigo" string = "Código del Módulo"/>               <!-- Código del Módulo -->

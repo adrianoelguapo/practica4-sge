@@ -15,7 +15,7 @@
 
     </record>
 
-    <!-- Vista de lista para consultas -->
+    <!-- Vista de lista de consultas -->
     <record id = "view_consulta_list" model = "ir.ui.view">
 
         <!-- Nombre de la vista -->
@@ -79,7 +79,7 @@
                     <!-- Diagnóstico (textarea para texto largo) -->
                     <group>
 
-                        <field name = "diagnostico" widget = "textarea" string = "Diagnóstico" placeholder = "Escriba el diagnóstico aquí..."/>
+                        <field name = "diagnostico" widget = "textarea" string = "Diagnóstico" placeholder = "Escribe el diagnóstico aquí..."/>
 
                     </group>
 

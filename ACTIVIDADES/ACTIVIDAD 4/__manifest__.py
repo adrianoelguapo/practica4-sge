@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 {
     'name': 'Gestión de Ciclos Formativos',
     'version': '1.0',
@@ -8,11 +10,11 @@
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
-        'views/ciclo_formativo_views.xml',
-        'views/modulo_views.xml',
-        'views/alumno_views.xml',
-        'views/profesor_views.xml',
-        'views/menu_views.xml',
+        'views/ciclo_formativo_views.xml',  # Vistas de los ciclos
+        'views/modulo_views.xml',           # Vistas de los módulos
+        'views/alumno_views.xml',           # Vistas de los alumnos
+        'views/profesor_views.xml',         # Vistas de los profesores
+        'views/menu_views.xml',             # Vistas de los menús
     ],
     'installable': True,
     'application': True,

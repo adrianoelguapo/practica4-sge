@@ -61,11 +61,7 @@
                     <!-- Título del formulario -->
                     <div class = "oe_title">
 
-                        <h1>
-
-                            <field name = "name" placeholder = "Nombre completo del médico"/>   <!-- Nombre del médico -->
-
-                        </h1>
+                        <h1> <field name = "name" placeholder = "Nombre completo del médico"/> </h1>   <!-- Nombre del médico -->
 
                     </div>
 

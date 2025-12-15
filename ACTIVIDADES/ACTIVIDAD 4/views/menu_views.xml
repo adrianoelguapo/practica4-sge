@@ -1,5 +1,6 @@
 <?xml version = "1.0" encoding = "utf-8"?>
 <odoo>
+
     <!-- Menú principal -->
     <menuitem id = "menu_ciclos_principal" name = "Ciclos Formativos" sequence = "10"/>
     

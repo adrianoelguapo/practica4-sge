@@ -71,7 +71,7 @@
 
                     </group>
 
-                    <!-- Relación con alumnos -->
+                    <!-- Alumnos que cursan el módulo -->
                     <field name = "alumno_ids">
                         
                         <!-- Vista tipo lista -->

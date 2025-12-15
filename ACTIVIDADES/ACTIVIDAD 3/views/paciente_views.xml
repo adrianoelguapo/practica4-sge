@@ -61,11 +61,7 @@
                     <!-- Título del formulario -->
                     <div class = "oe_title">
 
-                        <h1>
-
-                            <field name = "name" placeholder = "Nombre completo del paciente"/> <!-- Nombre del paciente -->
-
-                        </h1>
+                        <h1> <field name = "name" placeholder = "Nombre completo del paciente"/> </h1> <!-- Nombre del paciente -->
 
                     </div>
 
@@ -73,7 +69,7 @@
                     <group>
 
                         
-                        <field name = "symptoms" widget = "textarea" string = "Síntomas" placeholder = "Escriba los síntomas del paciente aquí..."/> <!-- Síntomas del paciente -->
+                        <field name = "symptoms" widget = "textarea" string = "Síntomas" placeholder = "Escribe los síntomas aquí..."/> <!-- Síntomas del paciente -->
 
                     </group>
 

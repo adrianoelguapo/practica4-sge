@@ -15,5 +15,5 @@ class Alumno(models.Model):
     name = fields.Char('Nombre', required = True)
     dni = fields.Char('DNI', required = True)
     
-    # Relación con módulos: muchos alumnos pueden estar en muchos módulos
+    # Relación con módulos: varios alumnos pueden estar en varios módulos
     modulo_ids = fields.Many2many('ciclos.modulo', string = 'Módulos')

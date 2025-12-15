@@ -14,14 +14,12 @@ class Modulo(models.Model):
     # Campos obligatorios para nombre y código del módulo.
     name = fields.Char('Nombre', required = True)
     codigo = fields.Char('Código', required = True)
-    
-    # Relaciones
 
-    # Un módulo pertenece a un solo ciclo
+    # Relación con Ciclos: Un módulo pertenece a un solo ciclo
     ciclo_id = fields.Many2one('ciclos.ciclo', 'Ciclo', required = True)
     
-    # Un módulo puede tener un solo profesor
+    # Relación con Profesores: Un módulo puede tener un solo profesor
     profesor_id = fields.Many2one('ciclos.profesor', 'Profesor')
     
-    # Un módulo puede tener muchos alumnos
+    # Relación con Alumnos: Un módulo puede tener varios alumnos
     alumno_ids = fields.Many2many('ciclos.alumno', string = 'Alumnos')

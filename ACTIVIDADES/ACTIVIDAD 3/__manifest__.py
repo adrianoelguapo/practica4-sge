@@ -8,7 +8,7 @@
     'website': 'https://staytuned.com.es',
     'depends': ['base'],
     'data': [
-        'security/ir.model.access.csv',  # Permisos de acceso
+        'security/ir.model.access.csv',
         'views/paciente_views.xml',      # Vistas de pacientes
         'views/medico_views.xml',        # Vistas de médicos
         'views/consulta_views.xml',      # Vistas de consultas
